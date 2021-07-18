@@ -1,0 +1,6 @@
+framework module Pods_MtsInvestUIService_Example {
+  umbrella header "Pods-MtsInvestUIService_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
