@@ -110,3 +110,24 @@ final class StocksHolder {
         item = SharesConfigurator(item: data)
     }
 }
+
+
+enum BrokeragePortfolioType: String {
+    case iti = "BROKER_ITI"
+    case mts = "BROKER_MTSB"
+    
+    var associatedKeys: [String : String] {
+        switch self {
+        case .mts:
+            return ["provider" : "bank"]
+        default:
+            return [:]
+        }
+    }
+    
+    func add(metadata: Metadata) throws -> Metadata{
+        var keys = metadata.dictionaryRepresentation
+        keys = keys.merging(associatedKeys) { (_, new) in new }
+        return try Metadata(keys)
+    }
+}

@@ -5,6 +5,9 @@ platform :ios, '11.0'
 target 'MtsInvestUIService_Example' do
   
   pod 'SnapKit'
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'SkeletonView'
   
   pod 'MtsInvestGrpcService', :git => 'https://github.com/pastmos/MtsInvestGrpcService.git'
   

@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'MtsInvestUIService/Classes/**/*'
+  s.source_files = 'MtsInvestUIService/Classes/**/*/*'
   
   # s.resource_bundles = {
   #   'MtsInvestUIService' => ['MtsInvestUIService/Assets/*.png']
@@ -39,4 +39,9 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'SnapKit'
+  s.dependency 'Alamofire'
+  s.dependency 'AlamofireImage'
+  s.dependency 'MtsInvestGrpcService'
+  s.dependency 'SkeletonView'
+  
 end

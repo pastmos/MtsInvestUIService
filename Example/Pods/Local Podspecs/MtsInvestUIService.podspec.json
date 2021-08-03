@@ -18,9 +18,21 @@
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "MtsInvestUIService/Classes/**/*",
+  "source_files": "MtsInvestUIService/Classes/**/*/*",
   "dependencies": {
     "SnapKit": [
+
+    ],
+    "Alamofire": [
+
+    ],
+    "AlamofireImage": [
+
+    ],
+    "MtsInvestGrpcService": [
+
+    ],
+    "SkeletonView": [
 
     ]
   }
