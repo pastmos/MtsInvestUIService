@@ -1,0 +1,6 @@
+framework module MtsInvestUIService {
+  umbrella header "MtsInvestUIService-umbrella.h"
+
+  export *
+  module * { export * }
+}

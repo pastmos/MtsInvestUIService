@@ -1,6 +1,0 @@
-framework module Pods_MtsInvestUIService_Tests {
-  umbrella header "Pods-MtsInvestUIService_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

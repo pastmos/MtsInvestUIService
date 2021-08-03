@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "MtsInvestUIService-umbrella.h"
 
 FOUNDATION_EXPORT double MtsInvestUIServiceVersionNumber;
 FOUNDATION_EXPORT const unsigned char MtsInvestUIServiceVersionString[];

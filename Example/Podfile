@@ -1,13 +1,13 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '11.0'
 
 target 'MtsInvestUIService_Example' do
+  
+  pod 'SnapKit'
+  
+  pod 'MtsInvestGrpcService', :git => 'https://github.com/pastmos/MtsInvestGrpcService.git'
+  
   pod 'MtsInvestUIService', :path => '../'
 
-  target 'MtsInvestUIService_Tests' do
-    inherit! :search_paths
-
-    pod 'FBSnapshotTestCase' , '~> 2.1.4'
-  end
 end
