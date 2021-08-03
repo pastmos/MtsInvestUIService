@@ -106,7 +106,7 @@ extension StocksInteractor: StocksInteractorInterface {
         
         for item in tickerCopy {
             let briefStream = StockInstrumentBriefStreamer(
-                domain: AppSettings.GRPCBaseDomain(),
+                domain: "https://api-dev.mts.investments",
                 ticker: item.name,
                 instrumentType: type
             )

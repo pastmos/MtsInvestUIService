@@ -8,6 +8,7 @@ target 'MtsInvestUIService_Example' do
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'SkeletonView'
+  pod 'Material'
   
   pod 'MtsInvestGrpcService', :git => 'https://github.com/pastmos/MtsInvestGrpcService.git'
   

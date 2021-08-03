@@ -8,6 +8,7 @@
 
 import UIKit
 import AlamofireImage
+import SkeletonView
 
 typealias FeedSharesConfigurator = TableCellConfigurator<FeedShareCell, FeedShareViewModel>
 

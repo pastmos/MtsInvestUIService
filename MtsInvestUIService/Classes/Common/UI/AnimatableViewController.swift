@@ -161,7 +161,7 @@ class AnimatableViewController: BaseViewController, UIGestureRecognizerDelegate 
         let viewToDissmis = navigationController ?? self
         let scale = presentationPosition.width / view.frame.width
         viewToDissmis.view.transform = .init(scaleX: scale, y: scale)
-        viewToDissmis.view.layer.cornerRadius = AnimatorConstants.cornerRadius
+        viewToDissmis.view.layer.cornerRadius = 16
     }
     
     //MARK: UIGestureRecognizerDelegate

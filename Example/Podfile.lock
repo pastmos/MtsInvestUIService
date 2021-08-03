@@ -21,11 +21,19 @@ PODS:
     - SwiftNIOTransportServices (< 2.0.0, >= 1.6.0)
     - SwiftProtobuf (< 2.0.0, >= 1.9.0)
   - Logging (1.4.0)
+  - Material (3.1.8):
+    - Material/Core (= 3.1.8)
+  - Material/Core (3.1.8):
+    - Motion (~> 3.1.1)
+  - Motion (3.1.3):
+    - Motion/Core (= 3.1.3)
+  - Motion/Core (3.1.3)
   - MtsInvestGrpcService (0.1.21):
     - gRPC-Swift
   - MtsInvestUIService (0.1.0):
     - Alamofire
     - AlamofireImage
+    - Material
     - MtsInvestGrpcService
     - SkeletonView
     - SnapKit
@@ -74,6 +82,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
+  - Material
   - MtsInvestGrpcService (from `https://github.com/pastmos/MtsInvestGrpcService.git`)
   - MtsInvestUIService (from `../`)
   - SkeletonView
@@ -93,6 +102,8 @@ SPEC REPOS:
     - CNIOWindows
     - gRPC-Swift
     - Logging
+    - Material
+    - Motion
     - SkeletonView
     - SnapKit
     - SwiftNIO
@@ -131,8 +142,10 @@ SPEC CHECKSUMS:
   CNIOWindows: 8f14a2ec959cd0fd6ee102384ca4d09b1cff9b4e
   gRPC-Swift: f7a248c42cc639c7a66422e40b6e2797881095d1
   Logging: beeb016c9c80cf77042d62e83495816847ef108b
+  Material: a2a3f400a3b549d53ef89e56c58c4535b29db387
+  Motion: cf1e060e489f6661126374d5c60dbd2ed991605c
   MtsInvestGrpcService: ba73243d6a55b954840a7cb28139a37b21f2ef86
-  MtsInvestUIService: 53ba47a77f0696d04e36ab0c0a5d0cfe62f7c16d
+  MtsInvestUIService: 42c061e47aa7224ed28fb062efcb1cf2c9fa2f4f
   SkeletonView: a085533443fed0198309f1979780afb6e80eaedd
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftNIO: f8ba4a53a934bf5ef6cd84ba9133903c9c760874
@@ -147,6 +160,6 @@ SPEC CHECKSUMS:
   SwiftNIOTransportServices: d7325a26197766ddaf800d5237ad9cdd1c8d47fc
   SwiftProtobuf: 9c85136c6ba74b0a1b84279dbf0f6db8efb714e0
 
-PODFILE CHECKSUM: 9b8fda45afdca115fbab15b8ac248e4f42b7a20b
+PODFILE CHECKSUM: e1d2eea72f6d48cd48b7c70cbd4f0bdd84be240b
 
 COCOAPODS: 1.10.2

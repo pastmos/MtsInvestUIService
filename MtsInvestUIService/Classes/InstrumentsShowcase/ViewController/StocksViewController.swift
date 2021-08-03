@@ -61,7 +61,7 @@ final class StocksViewController: AnimatableViewController {
         super.viewWillAppear(animated)
         presenter.viewWillAppear?()
         
-        guard isBeingPresented || !isMovingToParent else { return }
+        guard isBeingPresented || !isMovingToParentViewController else { return }
         presenter.renewEvents()
     }
     
@@ -110,7 +110,7 @@ final class StocksViewController: AnimatableViewController {
     private func configureTableView() {
         tableView.register(R.nib.feedShareCell)
         tableView.register(R.nib.stocksCollectionCell)
-        tableView.sectionHeaderHeight = UITableView.automaticDimension
+        tableView.sectionHeaderHeight = UITableViewAutomaticDimension
         tableView.estimatedSectionHeaderHeight = Constants.estimatedHeaderHeight
         
         presenter.configureTableView(tableView)
@@ -238,9 +238,6 @@ extension StocksViewController: StocksPresenterOutput {
         let event: EventType = type == .stock
             ? .showcase_open_stock_instrument
             : .showcase_open_bonds_instrument
-        
-        AnalyticApplicationManager.logPlainEvent(name: event,
-                                                 parameters: ["instrument_id": brief.instrumentID])
         
         router.openStocksInstrument(for: brief, type: type, portfolioType: portfolioType)
     }

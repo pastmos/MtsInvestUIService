@@ -43,5 +43,6 @@ TODO: Add long description of the pod here.
   s.dependency 'AlamofireImage'
   s.dependency 'MtsInvestGrpcService'
   s.dependency 'SkeletonView'
+  s.dependency 'Material'
   
 end

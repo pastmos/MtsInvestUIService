@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MtsInvestGrpcService
 
 private typealias SharesConfigurator = TableCellConfigurator<FeedShareCell, FeedShareViewModel>
 
@@ -19,7 +20,7 @@ enum BrokerageInstrumentType: CaseIterable {
 	case foreignObligation
 	case foreignStock
     
-    init(type: GrpcInstrumentCommonType) {
+    init(type: INVInstrumentCommonType) {
         switch type {
         case .stock:
             self = .stock
@@ -29,7 +30,7 @@ enum BrokerageInstrumentType: CaseIterable {
             self = .bpif
 		case .currency:
 			self = .currency
-		case .foreignBond:
+		case .foreginBond:
 			self = .foreignObligation
 		case .foreignStock:
 			self = .foreignStock
@@ -70,7 +71,7 @@ extension BrokerageInstrumentType {
         }
     }
     
-    var commonType: GrpcInstrumentCommonType {
+    var commonType: INVInstrumentCommonType {
         switch self {
         case .stock:
             return .stock
@@ -81,7 +82,7 @@ extension BrokerageInstrumentType {
 		case .foreignStock:
 			return .foreignStock
 		case .foreignObligation:
-			return .foreignBond
+			return .foreginBond
         default:
             return .other
         }
@@ -123,11 +124,5 @@ enum BrokeragePortfolioType: String {
         default:
             return [:]
         }
-    }
-    
-    func add(metadata: Metadata) throws -> Metadata{
-        var keys = metadata.dictionaryRepresentation
-        keys = keys.merging(associatedKeys) { (_, new) in new }
-        return try Metadata(keys)
     }
 }
