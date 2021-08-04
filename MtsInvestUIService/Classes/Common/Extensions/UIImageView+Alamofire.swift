@@ -16,8 +16,8 @@ extension UIImageView {
     
 	func setShareIcon(with url: URL,
 					  completion: @escaping ((Swift.Result<Void, Error>) -> Void)) {
-                
-		Alamofire.request(url).responseImage { response in
+
+		AF.request(url).responseImage { response in
 			if let error = response.error {
 				self.image = nil
 				completion(.failure(error))
@@ -34,7 +34,7 @@ extension UIImageView {
     func setShareIconWithCache(with url: URL,
                       completion: @escaping ((Swift.Result<Void, Error>) -> Void)) {
                 
-        self.af_setImage(withURL: url, placeholderImage: UIImage(named: url.absoluteString), completion:  { response in
+        self.af.setImage(withURL: url, placeholderImage: UIImage(named: url.absoluteString), completion:  { response in
             if let error = response.error {
                 completion(.failure(error))
             }

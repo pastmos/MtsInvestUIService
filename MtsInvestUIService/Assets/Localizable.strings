@@ -1,0 +1,1423 @@
+/* 
+  Localizable.strings
+  FinService
+
+  Created by Дмитрий on 16.08.17.
+  Copyright © 2017 MTS IT. All rights reserved.
+*/
+
+// Common
+Yes = "Да";
+No = "Нет";
+Cancel = "Отмена";
+Close = "Закрыть";
+Continue = "Продолжить";
+Retry = "Повторить";
+Apply = "Применить";
+Next = "Далее";
+NoData = "Нет данных";
+Back = "Назад";
+Version = "v. ";//"Версия приложения";
+VersionFull = "Версия";
+ErrorOccured = "Произошла ошибка";
+Sorry = "Извините";
+NetworkUnreachable = "Отсутствует подключение к интернету";
+NetworkReachable = "Соединение с интернетом восстановлено";
+WelcomeBack = "С возвращением!";
+WelcomeBackWithName = "С возвращением, ";
+Today = "Сегодня";
+Yesterday = "Вчера";
+OK = "OK";
+Pieces.Short = "шт";
+Percent = "%";
+MyActives = "Мои активы";
+Gender = "Пол";
+Gender.Male = "Мужской";
+Gender.Female = "Женский";
+More = "Подробнее";
+ForPeriod = "за";
+From = "с";
+RussianFederation = "Российская Федерация";
+
+Currency.RUB.Sign = "₽";
+Currency.RUR.Sign = "₽";
+Currency.USD.Sign = "$";
+Currency.EUR.Sign = "€";
+Currency.RUB.Name = "Рубли";
+Currency.RUR.Name = "Рубли";
+Currency.USD.Name = "Доллары";
+Currency.EUR.Name = "Евро";
+Currency.RUR.NameCount = "Рублей";
+Currency.RUB.NameCount = "Рублей";
+Currency.USD.NameCount = "Долларов";
+Currency.EUR.NameCount = "Евро";
+
+Currency.RUB.FullName = "Российский рубль";
+Currency.RUR.FullName = "Российский рубль";
+Currency.USD.FullName = "Доллар США";
+Currency.EUR.FullName = "Евро";
+
+Money.Value = "%@ %@";
+
+ProgressLabel.Auth = "Авторизация...";
+ProgressLabel.SendSMS = "Отправка SMS...";
+ProgressLabel.Logoff = "Выход...";
+ProgressLabel.Loading = "Загрузка...";
+
+SMSSend.Repeat = "Отправить СМС ещё раз через ";
+SMSSend.Error = "Неверный код подтверждения.\n%@";
+
+SMEV.Error = "Заявка отклонена из-за некорректных данных. \n Проверьте статус заявки во вкладке \"Мои активы\".";
+
+//Funds
+fundNameFA = "Российские акции";
+fundNameAM = "Высокие технологии";
+fundNameSM = "Сберегательный";
+fundNameMV = "Валютные накопления";
+fundNameBT = "Биотехнологии";
+fundNameDU = "Доверительное управление";
+
+//Registration
+Registration.PasswordRules = "Пароль должен содержать не менее 6 символов и цифры или заглавные буквы";
+Registration.TooEasyPass = "Слишком простой пароль";
+Registration.PasswordsMismatch = "Пароли не совпадают";
+Registration.IncorrectAddress = "Некорректный адрес";
+Registration.TokenRecieveError = "Произошла ошибка получения токена";
+
+// Errors
+ErrorTitle = "Ошибка";
+Error.APIAuthError = "Ошибка авторизации в приложении";
+Error.APIException = "При выполнении запроса произошла ошибка.\nПопробуйте повторить позже.";
+Error.FeedbackNotSent = "Не удалось отправить обращение. \nПопробуйте повторить позже.";
+Error.Screen.title = "Что-то здесь не так";
+Error.Screen.messageUsFull = "Поправим, а пока попробуйте повторить операцию ещё раз. Если ошибка повторяется, напишите нам.";
+Error.Screen.messageUs = "напишите нам.";
+Error.NoData = "Данные не получены.\nПопробуйте повторить позже.";
+Error.NoNetwork = "Вероятно, соединение с интернетом прервано.";
+Error.FieldIsEmpty = "Поле обязательно для заполнения";
+Error.AllowedOnlyRussianResidents = "Сервис доступен только для налоговых и валютных резидентов РФ";
+Error.OfficialNotAllowed = "Сервис не доступен для публичных должностных лиц";
+Error.FieldIsNotFromList = "Выберите значение из списка";
+Error.WrongDataPassed = "Wrong data passed";
+Error.TryReloadDataText = "Попробуйте обновить экран. Если ошибка повторяется, напишите нам на ";
+Error.InvalidSMSCode = "Неправильный код";
+Error.SomethingWentWrong = "Что-то пошло не так. Попробуйте позднее.";
+Error.IncorrectPhoneNumber = "Некорректный номер телефона";
+Error.NotFilledCorrect = "Некорректные данные";
+Error.SignHasExpired = "Срок жизни кода из СМС истек. Получите новый.";
+Error.LoginLocked = "Слишком много неправильных попыток ввода. Попробуйте снова через %@";
+
+//Unknown Error
+UnknownError.Title = "Что-то здесь не так";
+UnknownError.Message = "Попробуйте ещё раз.\nЕсли ошибка повторяется, напишите нам.";
+
+// AuthNameController
+AuthName.Title = "Личный кабинет";
+AuthName.NameField = "ФИО";
+AuthName.SurnameField = "Фамилия";
+AuthName.FirstNameField = "Имя";
+AuthName.SecondNameField = "Отчество";
+AuthName.PhoneField = "Номер телефона";
+AuthName.LoginBtn = "Войти";
+AuthName.Skip = "Стать клиентом";
+AuthName.NewClientBtn = "Стать клиентом";
+AuthName.NotFoundError = "Клиент %@, тел. %@ не найден.";
+
+// CheckEmail
+
+CheckEmail.InitialTitle = "Проверьте почту";
+CheckEmail.ResendTitle = "Ссылка отправлена повторно";
+CheckEmail.InitialSubTitle = "Мы отправили ссылку для смены пароля вам на адрес:";
+CheckEmail.InfoText = "Проверьте папку “Спам” или отправьте ссылку еще раз";
+CheckEmail.InitialResendEmail = "Не получили письмо?";
+CheckEmail.ResendEmail = "Отправить ссылку еще раз";
+CheckEmail.ResendEmailTimerText = "Отправить ссылку еще раз можно через %@";
+
+// MARK: CheckVersion
+CheckVersion.UpdateAvailableTitle = "Доступно обновление";
+CheckVersion.UnsupportedVersionTitle = "Данная версия не поддерживается";
+CheckVersion.MainMessageText = "Обновите приложение, чтобы пользоваться актуальной версией.";
+CheckVersion.UpdateText = "Обновить";
+CheckVersion.SkipText = "Пропустить";
+
+//AuthViewController
+AuthController.PrivacyPolicy = "Нажимая «Далее», вы соглашаетесь на\nобработку и хранение персональных данных";
+AuthEmail.EmailWasSent = "На ваш адрес электронной почты было отправлено письмо. Пожалуйста, следуйте инструкциям указанным в письме";
+
+// AuthSMSController
+AuthSMS.SMSPrompt = "На ваш номер отправлено SMS сообщение с кодом подтверждения";
+AuthSMS.CodeField = "Код из SMS";
+AuthSMS.Confirm = "Подтвердить";
+AuthSMS.Resend = "Отправить SMS ещё раз";
+
+//AuthBiometry
+AuthBiometry.PutFinger = "Приложите палец для входа";
+AuthBiometry.UseCode = "Использовать код";
+AuthBiometry.UseFaceRecognition = "Распознавание лица для входа";
+
+// AuthNewPinController
+AuthNewPin.CreatePinCode = "Создайте 4-х значный код доступа";
+AuthNewPin.RepeatPinCode = "повторите ещё раз";
+
+// AuthPinController
+AuthPin.EnterPin = "Введите код доступа";
+AuthPin.FaceIdReason = "Распознование лица для входа в приложение";
+AuthPin.TouchIdReason = "Приложите палец для входа в приложение";
+AuthPin.RestorePin = "Забыли\nкод?";
+AuthPin.RestorePinFull = "Забыли код?";
+AuthPin.RestorePrompt = "Для восстановления кода потребуется заново авторизоваться в системе";
+AuthPin.ChangeUser = "Войти под другим пользователем?";
+AuthPin.ForgotPinPrompt = "Ничего страшного. Авторизуйтесь заново и придумайте новый.";
+AuthPin.EnterLoginPass = "Ввести логин и пароль";
+AuthPin.BiometryChangedTitle = "Биометрические данные были изменены";
+AuthPin.BiometryChangedDesc = "Пожалуйста, авторизуйтесь используя ваш ПИН-код";
+AuthPin.RetriesLeft = "Осталось ";
+
+// Analytics
+Analytics.MyActivesController.ScreenName = "Портфолио ПИФы";
+Analytics.DUDocumentsListController.ScreenName = "Документы";
+Analytics.SellPaiController.ScreenName = "Продажа пая";
+Analytics.AboutCompanyViewController.ScreenName = "О компании";
+Analytics.BBuyingViewController.ScreenName = "Покупка пая";
+Analytics.BuyingDetailsViewController.Buy.ScreenName = "Покупка инструмента";
+Analytics.BuyingDetailsViewController.Sell.ScreenName = "Продажа инструмента";
+Analytics.NewEnterCodeViewController.ScreenName = "Подписание";
+Analytics.ContactsViewController.ScreenName = "Контакты";
+Analytics.FeedMainViewController.ScreenName = "Витрина";
+Analytics.MarkdownViewViewController.ScreenName = "Статья";
+Analytics.NewsViewController.ScreenName = "Все новости";
+Analytics.NewsDetailsViewController.ScreenName = "Новость";
+Analytics.StocksViewController.ScreenName = "Список инструментов";
+Analytics.ShareDetailViewController.ScreenName = "Список инструментов";
+Analytics.FeedbackFormViewController.ScreenName = "Обратная связь";
+Analytics.HelpSectionViewController.ScreenName = "Помощь";
+Analytics.DUWithdrawalController.ScreenName = "Вывод средств ДУ";
+Analytics.DUProfilingViewController.ScreenName = "Профилирование ДУ";
+Analytics.DUViewController.ScreenName = "Портфолио ДУ";
+Analytics.DUStrategiesViewController.ScreenName = "Все стратегии ДУ";
+Analytics.DUStrategyDetailsViewController.ScreenName = "Информация о стратегии ДУ";
+Analytics.DURequisitesViewController.ScreenName = "Ревизиты возврата ДУ";
+Analytics.BrokerageAccountViewController.ScreenName = "Портфолио брокерсий счёт";
+Analytics.SavingAccountDocumentReaderViewController.ScreenName = "Просмотр документа";
+Analytics.MoreMenuViewController.ScreenName = "Ещё";
+Analytics.MyProfileViewController.ScreenName = "Профиль";
+Analytics.IdentityPageController.ScreenName = "Оформление заявки";
+Analytics.PayCardViewController.ScreenName = "Оплата картой";
+Analytics.DUDetailsMainController.ScreenName = "Детальное стратегии ДУ";
+Analytics.ExchangeMainViewController.ScreenName = "Обмен пая";
+Analytics.ExchangeFundsViewController.ScreenName = "Выбор фонда";
+Analytics.FundDetailsViewController.ScreenName = "Мои активы";
+Analytics.FundDynamicController.ScreenName = "Динамика пая";
+Analytics.FundStructureController.ScreenName = "Структура пая";
+Analytics.FundCostOfSharesController.ScreenName = "СЧА";
+Analytics.FundInfoController.ScreenName = "О фонде";
+Analytics.FundsTableController.ScreenName = "Список фондов ПИФ";
+Analytics.CompareFundsController.ScreenName = "Сравнение фондов ПИФ";
+Analytics.OperationsTableViewController.ScreenName = "Операции";
+Analytics.PaymentPurposeViewController.ScreenName = "Платежные реквизиты стратегии ДУ";
+
+// EnterPasswordViewController
+EnterPassword.ExpireError = "Срок жизни кода истек.";
+EnterPassword.RetriesOutError = "Вы превысили количество попыток.\nНеобходимо заново пройти авторизацию";
+EnterPassword.ExpireErrorDescription = "Срок жизни кода истек.\nНеобходимо заново пройти авторизацию";
+EnterPassword.RetriesLeft = "Осталось %@";
+EnterPassword.WrongPasword = "Неверный пароль";
+EnterPassword.RetryPopupMessage = "Слишком много неправильных попыток ввода. Попробуйте снова через %d минут.";
+
+// Popup
+Popup.AccountStatus.CheckButtonTitle = "Проверить статус заявки";
+Popup.AccountStatus.Title = "Ваша заявка не подтверждена";
+Popup.AccountStatus.Message = "Вы можете проверить статус заявки во вкладке мои активы";
+
+// NewEnterCodeViewController
+SignDocuments.Restriction = "Нажимая подписать, я подтверждаю, что ознакомлен с соглашением об ЭДО. Подтверждаю и гарантирую, что мной был указан номер мобильного телефона, который принадлежит мне.";
+SignDocuments.Restriction.Link = "соглашением об ЭДО";
+EnterCode.SmsRetriesExpire = "Превышен лимит попыток ввода СМС кода";
+EnterCode.SmsWrongCodeError = "Неверный код";
+EnterCode.SmsExpireError = "Срок жизни кода истек";
+EnterCode.SmsUnknownError = "Неизвестная ошибка";
+EnterCode.SmsResendError = "Ошибка отправки повторного СМС";
+
+// Menu
+Menu.listTitle = "Ещё";
+Menu.Title = "МТС Инвестиции";
+Portfolio.Title = "Мой портфель";
+Products.Title = "Все инструменты";
+Orders.Title = "Заявки";
+Documents.Title = "Документы";
+DocFile.Title = "Документ";
+CompanyInfo.Title = "Информация";
+Profile.Title = "Мой профиль";
+Logoff.Title = "Выход";
+Login.Title = "Вход в ЛК";
+Login.TitleShort = "Вход";
+Menu.Logoff = "Выйти из текущего аккаунта?";
+
+//Notifications
+Portfolio.Notification.pending = "Выдача паев...";
+Portfolio.Notification.completed = "Паи выданы";
+Portfolio.Notification.sent = "Деньги отправлены";
+Portfolio.Notification.InfoTitle = "Выдача паев";
+Portfolio.Notification.InfoMessage = "Выдача паев обычно занимает несколько рабочих дней от момента поступления средств.";
+
+
+// Portfolio
+Portfolio.SumTitleRUB = "Стоимость рублёвых активов";
+Portfolio.SumTitleRUR = "Стоимость рублёвых активов";
+Portfolio.SumTitleUSD = "Стоимость валютных активов";
+Portfolio.Items = "Состав портфеля";
+Portfolio.Stats = "Статистика портфеля";
+
+// PortfolioItem
+PortfolioItem.yeldActualDateText = "Данные актуальны на %@.";
+PortfolioItem.yeldPendingText = "Сумма активов включает пополнение на %@ в обработке.";
+PortfolioItem.YieldTitle = "Доход:";
+PortfolioItem.Yield2Title = "Доходность:";
+PortfolioItem.Ratio1 = "Доля в портфеле: %@ %%";
+PortfolioItem.Ratio2 = "Доля %@: %@ %%";
+PortfolioItem.Sum = "Стоимость: %@ %@";
+PortfolioItem.Stats = "СЧА инвестора";
+
+Chart.PAll = "все";
+Chart.P1y = "1 год";
+Chart.P6m = "6 мес";
+Chart.P3m = "3 мес";
+Chart.P1m = "1 мес";
+
+//Feed
+Feed.Title = "Витрина";
+Feed.periodPrefix = "доходность: за ";
+Feed.unableLoadDataText = "Не удалось загрузить данные";
+Feed.ForeignStocksTitle = "Иностранные акции";
+Feed.ForeignBondsTitle = "Иностранные облигации";
+Feed.BondPromoCellPeriodTitle = "Срок размещения";
+Feed.BondPromoCellIncomeTitle = "Доходность";
+Feed.BondPromoCellIncomeDescription = "%@ в год";
+
+//Obligations
+Obligations.title = "Облигации";
+
+//Others
+Others.title = "Другие";
+
+//News
+News.title = "Новости";
+News.sourceInfo = "Информация предоставлена Агенством экономической информации «ПРАЙМ»";
+
+//Analytics
+Analytics.title = "Аналитика";
+
+//Stocks
+Stocks.title = "Акции";
+Stocks.OperationStatus.BuyingDone = "Покупка выполнена";
+Stocks.OperationStatus.SellingDone = "Продажа выполнена";
+Stocks.OperationStatus.BuyingCancel = "Покупка отменена";
+Stocks.OperationStatus.SellingCancel = "Продажа отменена";
+Stocks.OperationStatus.BuyingError = "Покупка не удалась";
+Stocks.OperationStatus.SellError = "Продажа не удалась";
+
+Stocks.Sort.Alphabet = "Алфавиту";
+Stocks.Sort.Price = "Цене";
+Stocks.Sort.Yield = "Доходности";
+Stocks.Sort.Ascending = "Возрастанию";
+Stocks.Sort.Descending = "Убыванию";
+
+//Bonds
+Bonds.title = "Облигации";
+
+//Bonds
+Others.title = "Другое";
+
+//Instruments
+Instruments.BiddingResume = "Торги возобновятся через ";
+Instruments.BiddingClose = "Биржа закроется через ";
+Instrument.Obligations = "облиг.";
+Instrument.Stocks = "акц.";
+Instrument.PriceTitle.Stocks = "за 1 акцию";
+Instrument.PriceTitle.Bpif = "за 1 пай";
+Instrument.cleanPrice = "Чистая цена %@";
+Instrument.Buying = "Покупка";
+Instrument.Selling  = "Продажа";
+Instrument.SellingAmount = "Количество %@ для продажи";
+Instrument.BuyingAmount = "Количество %@ для покупки";
+Instrument.StockAmountError = "Число %@ должно быть кратно %@";
+Instrument.availableFundsAmountError = "Число %@ не должно превышать доступные активы";
+Instrument.PopupCleanPriceTitle = "Почему цена выше?";
+Instrument.PopupCleanPriceDescription = "В цену покупки включается накопленный купонный доход.";
+Instrument.ErrorLoadingData = "Не удалось загрузить информацию по инструменту";
+Instruments.ReplenishmentAmount = "Для покупки пополните счёт на %@";
+Instruments.Period.Monthly = "Ежемесячные";
+Instruments.Period.Quarterly = "Ежеквартальные";
+Instruments.Period.SemiAnnual = "Полугодовые";
+Instruments.Period.Annual = "Годовые";
+Instruments.Period.Default.Days = "Каждые %@";
+
+Instruments.PreBookBuilding.Day.Current = "с %@ мск.";
+Instruments.PreBookBuilding.Day.Default = "%@ c %@ мск.";
+Instruments.BookBuilding.Day.Default = "%@ с %@ мск.";
+
+
+// PortfolioItem
+PortfolioItem.Title = "Инструмент из портфеля";
+
+// Products
+Product.Sell.Title = "Паев на продажу";
+Product.Details = "Узнать больше";
+ProductDetails.Title = "Инструмент";
+Product.Stats = "Статистика инструмента";
+Product.Cost = "Стоимость пая";
+Product.Sum = "СЧА";
+Product.Structure = "Структура активов";
+Product.Structure_I = "По отрослям";
+Product.Structure_R = "По рейтингу";
+Product.Structure_A = "По типу";
+Product.Instruments = "Основные активы";
+Product.Params = "Условия";
+Product.Mfee = "Комиссия за управление";
+Product.Sfee = "Комиссия за успех";
+Product.Discount = "Скидки/надбавки";
+Product.Return = "Ориентировочный срок возврата*";
+Product.Return2 = "Ориентировочный срок\nвозврата*";
+Product.ReturnComment = "*Выплата денежной компенсации осуществляется в течение 10 рабочих дней со дня погашения инвестиционных паев, за исключением случаев погашения инвестиционных паев при прекращении паевого инвестиционного фонда.";
+Product.Duration = "Дюрация";
+Product.OrderOfflineMessage = "На данный момент купить, продать или обменять паи %@ можно обратившись в офис управляющей компании";
+Product.OrderTrustMessage = "На данный момент осуществлять операции по договору доверительного управления можно обратившись в офис управляющей компании";
+Product.Yield = "Доходность";
+Product.YieldField1 = "за 1 месяц";
+Product.YieldField2 = "за 3 месяца";
+Product.YieldField3 = "за 6 месяцев";
+Product.YieldField4 = "за 1 год";
+Product.YieldField5 = "за 3 года";
+Product.YieldField6 = "с момента формирования";
+
+// Documents
+Documents.Others = "Другие документы";
+Documents.NoData = "У вас пока нет документов";
+"DocumentStatus.Исполнено" = "Исполнено";
+"DocumentStatus.ВОбработке" = "В обработке";
+"DocumentStatus.Отказ" = "Отказ";
+Document.FileDownload.Error = "Не удалось загрузить файл";
+Document.FileNotReadyTitle = "Документ еще не сформирован";
+Document.FileNotReadyDescription = "Обычно он становится доступен на следующий день";
+
+// Payment
+PaymentPurpose.Title = "Платёжные реквизиты";
+PaymentPurpose.Action = "Оплатить по реквизитам";
+PaymentPurpose.RequestProcessingTitle = "Заявка в обработке";
+PaymentPurpose.RequestProcessingDescription = "В ближайшее время мы сформируем реквизиты для перечисления средств. Обычно это занимает несколько минут.";
+PaymentPurpose.AttentionPifTitleText = "Оплачивайте паи только со своего счёта";
+PaymentPurpose.AttentionPifDescriptionText = "Оплата со счёта третьего лица влечёт обязанность по уплате НДФЛ с полной стоимости продаваемых паёв.";
+PaymentPurpose.AttentionDuTitleText = "Пополняйте ДУ только со своего счёта";
+PaymentPurpose.AttentionDuDescriptionText = "Оплата со счёта третьего лица влечёт обязанность по уплате НДФЛ с полной стоимости продаваемых бумаг.";
+PaymentCard.Step = "Шаг %d из %d";
+PaymentCard.CardError = "Произошла ошибка. Проверьте данные карты и попробуйте еще раз";
+PaymentCard.Success = "Оплата прошла успешно";
+PaymentCard.MinimumValueInfo = "Минимальная первоначальная сумма инвестиций %@ ₽. Вы можете внести сумму частями в течение 90 дней.";
+PaymentCard.paymentRejectedSystemError = "Платёж отклонён. Пожалуйста, попробуйте выполнить платёж позднее или обратитесь в поддержку.";
+PaymentCard.successfulFinancialTransaction = "Ваш платёж проведён успешно.";
+PaymentCard.paymentRejectedDeclineByBankError = "Платёж отклонён. Пожалуйста, обратитесь в Банк, выпустивший Вашу карту.";
+PaymentCard.DSAuthenticationFailure = "Ошибка 3DS аутентификации.";
+PaymentCard.paymentRejectedError = "Платёж отклонён. Возможные причины: недостаточно средств на счёте, были указаны неверные реквизиты карты, по Вашей карте запрещены расчёты через Интернет. Пожалуйста, попробуйте выполнить платёж повторно или обратитесь в Банк, выпустивший Вашу карту.";
+
+// Orders
+Orders.NoData = "У вас пока нет заявок";
+Orders.btnPurchase = "Купить";
+Orders.btnRepayment = "Продать";
+Orders.btnExchange = "Обменять";
+Orders.PurchaseError = "Неверный биржевой код клиента";
+Orders.OrderForCancelNotFound = "Заявка для снятия не найдена";
+Orders.CancelForOrderIsNotAllowed = "Снятие заявки невозможно.";
+
+PurchaseOrder.Title = "Покупка инструмента";
+RepaymentOrder.Title = "Продажа инструмента";
+ExchangeOrder.Title = "Обмен инструментов";
+PurchaseOrder.TitleShort = "Покупка";
+RepaymentOrder.TitleShort = "Продажа";
+ExchangeOrder.TitleShort = "Обмен";
+PurchaseSign.Title = "Подтверждение покупки";
+RepaymentSign.Title = "Подтверждение продажи";
+ExchangeSign.Title = "Подтверждение обмена";
+
+formOfFATCA = "Анкета FATCA";
+formOfShareholders = "Анкета клиента";
+formOfShareholdersFA = "Анкета клиента \"Российские акции\"";
+formOfShareholdersAM = "Анкета клиента \"Высокие технологии\"";
+formOfShareholdersSM = "Анкета клиента \"Сберегательный\"";
+formOfShareholdersMV = "Анкета клиента \"Валютные накопления\"";
+formOfShareholdersBT = "Анкета клиента \"Биотехнологии\"";
+applicationForPurchase = "Заявка на покупку";
+applicationForPurchaseFA = "Заявка на покупку \"Российские акции\"";
+applicationForPurchaseAM = "Заявка на покупку \"Высокие технологии\"";
+applicationForPurchaseSM = "Заявка на покупку \"Сберегательный\"";
+applicationForPurchaseMV = "Заявка на покупку \"Валютные накопления\"";
+applicationForPurchaseBT = "Заявка на покупку \"Биотехнологии\"";
+applicationForRepayment = "Заявка на продажу";
+applicationForExchange = "Заявка на обмен";
+PurchaseOrderName = "Заявка на выдачу";
+RepaymentOrderName = "Заявка на погашение";
+ExchangeOrderName = "Заявка на обмен";
+
+BaseOrder.PickProduct = "Выберите инструмент";
+PurchaseOrder.SumTitle = "Cумма покупки";
+PurchaseOrder.EnterSumTitle = "Введите сумму покупки";
+PurchaseOrder.MinSumTitle = "Минимальная сумма покупки";
+PurchaseOrder.OrderExists = "У вас уже есть заявка на покупку паёв по данному инструменту. Вы можете довнести средства по платёжным реквизитам.";
+PurchaseOrder.Identify.Title = "Идентификация";
+PurchaseOrder.Identify = "Для продолжения покупки вам необходимо пройти процедуру упрощёной идентификации.\nВыберите способ идентификации";
+PurchaseOrder.Identify.Esia = "Через Госуслуги";
+PurchaseOrder.Identify.Smev = "Через СМЭВ";
+RepaymentOrder.Total = "Доступно паёв: %@";
+RepaymentOrder.ReminderTitle = "Включать остаток";
+RepaymentOrder.AmountTitle = "Паёв на продажу";
+RepaymentOrder.EstimatedSum = "Ориентировочно: ";
+ExchangeOrder.AmountTitle = "Паёв на обмен";
+ExchangeOrder.PickProduct2 = "Обменять на инструмент";
+
+BaseSign.SMSPrompt = "На ваш номер отправлено SMS с кодом подтверждения для подписи следующих документов:";
+BaseSign.OrderRejectedTitle = "Ошибка отправки документов";
+BaseSign.OrderRejected = "Для уточнения причины отказа, пожалуйста, напишите нам по адресу: info@sistema-capital.com";
+BaseSign.Sign = "Подписать";
+ExchangeSign.ProductTitle = "Обменять на";
+
+OrderDone.Title = "%@\nуспешно подана";
+OrderDone.StatusTitle = "Статус";
+OrderDone.Text = "Статус заявки вы можете отслеживать в разделе Заявки.";
+OrderDone.TextEsia = "Поздравляем с покупкой. Теперь вы стали клиентом УК и можете перейти в личный кабинет.";
+OrderDone.TextSmev = "Процесс идентификации и обработка заявки будут выполнены в течение нескольких часов. О результате вам будет сообщено по электронной почте.";
+OrderDone.OrdersButton = "В раздел заявки";
+OrderDone.PortfolioButton = "Мой портфель";
+OrderDone.LKButton = "Личный кабинет";
+
+//Purchases
+Purchase.buying = "Выполняем покупку";
+Purchase.selling = "Выполням продажу";
+Purchase.btn.buying.cancel = "Отменить покупку";
+Purchase.btn.selling.cancel = "Отменить продажу";
+Purchase.buying.cancel = "Отменяем покупку";
+Purchase.selling.cancel = "Отменяем продажу";
+Purchase.lotDescription = "1 лот = %@ шт.";
+
+//Requisites
+Requisites.BankName = "Наименование банка";
+Requisites.BankBik = "БИК";
+Requisites.BankBikMistake = "БИК должен содержать 9 цифр";
+Requisites.BankInn = "ИНН";
+Requisites.Account = "Счёт получателя";
+Requisites.AccountMistake = "Счёт получателя введен не верно";
+Requisites.KorrAccount = "Корр. счёт";
+Requisites.KorrAccountMistake = "Корр. счёт должен содержать 20 цифр";
+Requisites.WhereTo = "Куда выводим?";
+Requisites.Residence = "Адрес резиденства";
+Requisites.RequisitesAlreadyExist = "Вы уже вводили эти реквизиты";
+
+Fund.Requisite.DocTitle = "Реквизиты для перечисления денежных средств в оплату инвестиционных паев ОПИФ рыночных финансовых инструментов \"Система Капитал - Мобильный. Облигации\"";
+Fund.Requisite.DocSize = "Скачать 1,2 Мб";
+Fund.Rules = "Правила фонда";
+
+// PDFViewer
+PDFViewer.Loading = "Загрузка PDF-файла...";
+PDFViewer.Error = "Не удалось загрузить данный файл";
+
+//InfoNotification
+InfoNotification.Success.title = "";
+InfoNotification.Success.description = "Заявка будет снята";
+InfoNotification.Error.title = "";
+InfoNotification.Error.description = "Произошла ошибка. Попробуйте ещё раз";
+
+// Info
+CompanyInfo.About = "Информация о компании"; //"Подробная информация";
+CompanyInfo.Privacy = "Политика конфиденциальности";
+AppInfo.DocDescription = "— объект авторского права ПАО «Мобильные ТелеСистемы», используемый ООО УК «Система Капитал», ПАО «МТС Банк» на основе лицензионного договора.";
+
+// Profile
+Profile.Doc = "Паспорт";
+Profile.Address = "Адрес";
+Profile.DocIssue = "Выдан";
+Profile.CashDetails = "Реквизиты";
+Profile.FailedSMEVAlertTitle = "В заявке допущена ошибка";
+Profile.FailedSMEVAlertDescription = "Ваша заявка была отклонена. Проверьте правильность указанных данных.";
+Profile.InProgressSMEVAlertTitle = "Ваши данные находятся на подтверждении";
+Profile.InProgressSMEVAlertDescription = "Как только изменения пройдут обработку, данные обновятся.";
+Profile.Name = "Имя";
+Profile.Surname = "Фамилия";
+Profile.Patronim = "Отчество";
+Profile.Email = "Электронная почта";
+Profile.Phone = "Телефон";
+
+CashDetails.Bik = "БИК";
+CashDetails.KorrAccount = "к/c";
+CashDetails.Account = "р/c";
+CashDetails.PersonalAccount = "л/с";
+CashDetails.Inn = "ИНН";
+CashDetails.Snils = "СНИЛС (Необязательно)";
+CashDetails.RusTaxResident = "Являюсь налоговым и валютным резидентом Российской Федерации";
+CashDetails.NotALowOfficial = "Не являюсь должностным лицом, указанным в ст.7.3 Федерального закона №115-Ф3 от 07.09.2001 г., и/или супругом(-ой), и/или близким родственником должностного лица, указанного в ст.7.3 Федерального закона №115-Ф3 от 07.09.2001 г.";
+
+// New Client ESIA
+ESIA.Title = "Госуслуги";
+ESIA.NotVerifyedError = "Ваш аккаунт на Госуслугах не подтверждён";
+ESIA.NotRFPassport = "Не найден российский паспорт";
+ESIA.NotAvailable = "Регистрация через Госуслуги в данный момент не доступна";
+
+NewClient.Footer.SavingAccount = "Нажимая Оформить, вы даете свое согласие на передачу и обработку персональных данных в АО «Инвестиционная компания «Ай Ти Инвест»";
+NewClient.Footer.SavingAccount.LinkText = "передачу и обработку персональных данных";
+NewClient.Footer.Buying = "Нажимая далее вы даете свое согласие на передачу и обработку персональных данных в ООО УК «Система Капитал»";
+
+NewClient.Footer.MTSBroker = "Нажимая Оформить, вы даете свое согласие на передачу и обработку персональных данных в ПАО «МТС-БАНК»";
+NewClient.Footer.MTSBroker.LinkText = "передачу и обработку персональных данных";
+
+NewClientForm.Title = "Оформление заявки";
+NewClient.Section.Person = "Личные данные";
+NewClient.Section.Adresses = "Адреса";
+NewClient.Section.Passport = "Паспорт";
+NewClient.Section.PassportError = "Паспорт недействителен";
+NewClient.Section.BirthdayUnderageDate = "Ваш возраст должен быть больше 18 лет";
+NewClient.Section.BirthdayPastOrFutureDate = "Некорректная дата";
+NewClient.Section.BirthdayBrokeDate = "Введите дату в формате ДД.ММ.ГГГГ";
+NewClient.Section.Inn = "ИНН";
+NewClient.Section.Site = "Сайт ФСН";
+NewClient.Section.Inn.Error = "Не удается найти ИНН. Проверьте корректность введенных данных";
+NewClient.Section.Bank = "Платёжные реквизиты";
+NewClient.Section.Bank.Hint = "По указанным реквизитам будут перечислены денежные средства при погашении инвестиционных паев";
+NewClient.Section.Contacts = "Контактная информация";
+NewClient.Section.Fatca = "Анкета FATCA";
+NewClient.Section.Confirm = "Подтверждение";
+
+NewClient.Surname.Field = "Фамилия";
+NewClient.Surname.Placeholder = "Введите фамилию";
+NewClient.Name.Field = "Имя";
+NewClient.Name.Placeholder = "Введите имя";
+NewClient.SecondName.Field = "Отчество";
+NewClient.SecondName.Error.Description = "Заполните поле. При отсутствии отчества поставьте:  –";
+NewClient.SecondName.Placeholder = "Введите отчество";
+NewClient.Nationality.Field = "Гражданство";
+NewClient.Nationality.Placeholder = "Страна";
+NewClient.Birthday.Field = "Дата рождения";
+NewClient.Birthday.Placeholder = "Укажите дату";
+NewClient.Placeborn.Field = "Место рождения (как в паспорте)";
+NewClient.Placeborn.Placeholder = "Населённый пункт";
+
+NewClient.LegalAddress.Field = "Место регистрации";
+NewClient.LegalAddress.Placeholder = "Укажите адрес регистрации";
+NewClient.FactAddress.Field = "Фактический адрес";
+NewClient.FactAddress.Placeholder = "Укажите фактический адрес";
+NewClient.PostAddress.Field = "Почтовый адрес";
+NewClient.PostAddress.Placeholder = "Укажите почтовый адрес";
+
+NewClient.DocNum.Field = "Серия номер";
+NewClient.DocNum.Placeholder = "0000 000000";
+NewClient.DocOrgan.Field = "Кем выдан";
+NewClient.DocOrgan.Placeholder = "Название организации";
+NewClient.DocDate.Field = "Дата выдачи";
+NewClient.DocDate.Placeholder = "Укажите дату";
+
+NewClient.Inn.Flield = "ИНН";
+NewClient.Inn.Placeholder = "Введите ИНН";
+NewClient.Inn.LinkText = "Узнать свой ИНН";
+
+NewClient.SubdivisionCode.Field = "Код подразделения";
+
+NewClient.Bik.Field = "БИК";
+NewClient.Bik.Placeholder = "Введите БИК банка";
+NewClient.Bank.Field = "Наименование банка";
+NewClient.Bank.Placeholder = "";
+NewClient.KorrAccount.Field = "Корреспондентский счёт";
+NewClient.KorrAccount.Placeholder = "";
+NewClient.Account.Field = "Счёт получателя";
+NewClient.Account.Placeholder = "Введите счёт получателя";
+
+NewClient.Bank.CashBack.Title = "Указать реквизиты для возврата средств";
+
+NewClient.Phone.Field = "Телефон";
+NewClient.Phone.Placeholder = "Введите номер телефона";
+NewClient.Email.Field = "Электронная почта";
+NewClient.Email.Placeholder = "Введите ваш e-mail";
+
+NewClient.Confirm1 = "Подтверждаю, что ознакомлен\nс соглашением об ЭДО";
+NewClient.Confirm1.LinkText = "с соглашением об ЭДО";
+NewClient.Confirm2 = "Даю свое согласие на передачу и\nобработку персональных данных\nв ООО УК \"Система-Капитал\"";
+NewClient.Confirm2.LinkText = "передачу и\nобработку персональных данных";
+
+NewClient.Address.Registration = "Адрес регистрации";
+NewClient.Address.Fact = "Фактический адрес";
+NewClient.Address.Post = "Почтовый адрес";
+
+NewClient.AddAddress.Area = "Регион";
+NewClient.AddAddress.Locality = "Город или населенный пункт";
+NewClient.AddAddress.Street = "Улица";
+NewClient.AddAddress.Building = "Дом, корпус";
+NewClient.AddAddress.Appartment = "Квартира";
+NewClient.AddAddress.NoAppartmentNumber = "нет номера квартиры";
+NewClient.AddAddress.ClearAllTextFields = "Очистить";
+
+NewClient.Address.FactSameWithRegistration = "Фактический адрес совпадает с регистрационным";
+NewClient.Address.PostSameWithRegistration = "Почтовый адрес совпадает с регистрационным";
+
+NewClient.Inn.Request = "Для получения сведений об ИНН заполните ФИО, дату рождения, паспортные данные и дату выдачи документа";
+NewClient.Inn.RequestError = "Ошибка получения ИНН";
+NewClient.Snils.Error = "Поле СНИЛС заполнено неверно";
+
+// Buying
+NewClient.Buying.HasOfficialRelatives.Error = "Для оформления документов, пожалуйста, обратитесь в офис Управляющей компании";
+NewClient.Buying.Q0 = "Я и (или) мои родственники занимают должности в законодательном, исполнительном, административном или судебном органе в Российской Федерации или других странах";
+NewClient.Buying.Q1 = "Вы имеете гражданство, отличное от гражданства Российской Федерации?";
+NewClient.Buying.Q1.Info = "Родственники - родственники по прямой восходящей и нисходящей линии (родители и дети, дедушки, бабушки и внуки), полнородные и неполнородные братья и сестра, усыновители и усыновленные, супруг или супруг.
+
+Должностное лицо - иностранное публичное должностное, лицо, должностное лицо публичной международной организации, лицо, замещающее (занимающее) государственную должность РФ, должность членов Совета директоров ЦБ РФ, должность федеральной государственной службы, назначение на которую и освобождение от которой осуществляются Президентом РФ или Правительством РФ, должность в ЦБ РФ, государственных корпорациях и иных организациях, созданных РФ на основании федеральных законов, включенную в перечни должностей, определяемых Президентом РФ.";
+NewClient.Buying.Q2 = "Имеете ли вы одновременно с гражданством Российской Федерации гражданство иностранного государства (за исключением гражданства государства - члена Таможенного Союза)?";
+NewClient.Buying.Q3 = "Имеете ли Вы вид на жительство в иностранном государстве?";
+NewClient.Buying.Q4 = "Вы находитесь на территории иностранного государства не менее 31 дня в течение текущего календарного года и не менее 183 дней в течение 3 лет, включая текущий год и два непосредственно предшествующих года, при этом сумма дней , в течение которых Вы присутствовали на территории иностранного государства в текущем году, а также двух предшествующих годах, умножается на установленных коэффициент:\n\n• коэффициент для текущего года равен 1 (т.е. учитываются все дни, проведенные в иностранном государстве в текущем году);\n• коэффициент предшествующего года равен 1/3 и\n• коэффициент позапрошлого года - 1/6.";
+
+Buying.BuyingInfo = "Информация о покупке";
+Buying.BuyingDUInfo = "Информация о пополнении";
+Buying.SumLessMin = "Сумма не может быть меньше %@";
+Buying.SumMoreMax = "Сумма не может быть больше %@";
+Buying.BuyingInfoDescription = "
+Создайте заявку на приобретение паев фонда. Затем переведите средства по указанным в заявке реквизитам.
+
+Паи будут выданы в течение нескольких рабочих дней.
+";
+
+// FATCA
+NewClient.Fatca.hasForeignResidence = "Я являюсь гражданином и/или налогоплательщиком иного государства, кроме РФ";
+NewClient.Fatca.hasForeignRVP = "Я имею «вид на жительство» и/или адрес в ином государстве, кроме РФ";
+NewClient.Fatca.errorNeedToGoOffice = "Для оформления документов, пожалуйста, обратитесь в офис Управляющей компании";
+NewClient.Fatca.country = "Страна резиденства";
+NewClient.Fatca.taxCountry = "Страна налогового резиденства";
+NewClient.Fatca.foreignAddress = "Адрес места жительства за пределами Российской Федерации";
+NewClient.Fatca.foreignDescription = "Укажите страну(ы) налогового резидентства, отличную(ые) от Российской Федерации, (т.е. страну(ы), резидентом которой(ых) Вы считаетесь для целей обложения подоходным налогом) и ИНН для каждой указанной страны (если имеется).";
+NewClient.Fatca.noIdentifierDescription = "Выберите причину:";
+NewClient.Fatca.Q1 = "Вы имеете гражданство, отличное от гражданства Российской Федерации?";
+NewClient.Fatca.Q2 = "Имеете ли Вы одновременно с гражданством Российской Федерации гражданство гражданства иностранного государства (за исключением гражданства государства - члена Таможенного союза)?";
+NewClient.Fatca.Q3 = "Имеете ли Вы вид на жительство в иностранном государстве?";
+NewClient.Fatca.Q4 = "Вы находитесь на территории иностранного государства не менее 31 дня в течение текущего календарного года и не менее 183 дней в течение 3 лет, включая текущий год и два непосредственно предшествующих года, при этом сумма дней, в течение которых Вы присутствовали на территории иностранного государства в текущем году, а также двух предшествующих годах, умножается на установленный коэффициент:\n• коэффициент для текущего года равен 1 (т.е. учитываются все дни, проведенные в иностранном государстве в текущем году);\n• коэффициент предшествующего года равен – 1/3 и\n• коэффициент позапрошлого года – 1/6.";
+NewClient.Fatca.Q11 = "Являетесь ли Вы налогоплательщиком США?";
+NewClient.Fatca.Q12 = "Являетесь ли Вы гражданином США?";
+NewClient.Fatca.Q13 = "Являются ли США местом Вашего рождения?";
+NewClient.Fatca.Q14 = "Являются ли США Вашим местом жительства/регистрации?";
+NewClient.Fatca.Q15 = "Имеется ли у Вас вид на жительство (green card) в США?";
+NewClient.Fatca.Q16 = "Имеется ли у Вас почтовый адрес, в том числе адрес арендованного почтового ящика, в США?";
+NewClient.Fatca.Q17 = "Имеется ли у Вас номер телефона, зарегистрированного в США?";
+NewClient.Fatca.Q18 = "Имеется ли у Вас номер телефона, зарегистрированный в ином иностранном государстве, отличном от США?";
+NewClient.Fatca.Q19 = "Выдавались ли доверенности и/или предоставлялось ли право подписи лицу, имеющему адрес в США?";
+NewClient.Fatca.Q20 = "Вы находитесь на территории США не менее 31 дня в течение текущего календарного года и не менее 183 дней в течение 3 лет, включая текущий год и два непосредственно предшествующих года, при этом сумма дней, в течение которых Вы присутствовали на территории США в текущем году, а также двух предшествующих годах, умножается на установленный коэффициент:\n• коэффициент для текущего года равен 1 (т.е. учитываются все дни, проведенные в США в текущем году);\n• коэффициент предшествующего года равен – 1/3 и\n• коэффициент позапрошлого года – 1/6.";
+NewClient.Fatca.Q21 = "Имеете ли Вы адрес места фактического проживания и (или) почтовый адрес, и (или) адрес до востребования в иностранном государстве?";
+NewClient.Fatca.Q22 = "Являетесь ли Вы налоговым резидентом иностранного государства?
+
+(“ДА”- если на дату заполнения настоящей вы находитесь на территории Российской Федерации меньше 183 календарных дней в течение 12 месяцев подряд, предшествующих дате заполнения настоящей анкеты) ";
+NewClient.Fatca.Q23 = "Отсутствует ли у Вас номер телефона, зарегистрированный в Российской Федерации?";
+NewClient.Fatca.Q24 = "ИНН, если есть";
+NewClient.Fatca.Q25 = "ИНН отсутствует";
+NewClient.Fatca.Q26 = "В стране, в которой Вы подлежите обложению подоходным налогом как резидент, ИНН не присваивается.";
+NewClient.Fatca.Q27 = "Вы не можете получить ИНН или эквивалентный ему номер по иным основаниям.";
+NewClient.Fatca.Q28 = "ИНН не требуется, поскольку страна, налоговым резидентом которой Вы являетесь и в которой Вам был присвоен ИНН, не требует от финансовых учреждений сбора и передачи сведений об ИНН.";
+NewClient.DiscardChangeTitle = "Все несохраненные данные будут потеряны";
+// Address
+
+Address.Title = "Адрес";
+
+// Intro
+
+Intro.Title = "Добро пожаловать!";
+Intro.SubTitle = "в МТС Инвестиции!";
+Intro.TextNonClient = "Выберите подходящий\nинвестиционный инструмент.\nДля приобритения нажмите кнопку";
+Intro.TextClient = "Войдите в личный кабинет,\nесли вы уже являетесь клиентом";
+Intro.ButtonLogin = "Вход в личный кабинет";
+Intro.ButtonSkip = "Продолжить без входа";
+Intro.About = "Мобильное приложение МТС Инвестиции";
+
+// More menu
+MoreMenu.MyProfile = "Мой профиль";
+MoreMenu.Help = "Помощь";
+MoreMenu.Contacts = "Контакты";
+MoreMenu.About = "О компании";
+MoreMenu.aboutApp = "О приложении";
+MoreMenu.Feedback = "Написать разработчикам";
+
+// Debug settings
+Debug.hostOptionTitle = "Использовать localHost";
+Debug.animationsOptionTitle = "Отключить анимации";
+
+//Feedback
+Feedback.Placeholder = "Введите...";
+Feedback.SubjectNotChosen = "Не выбрано";
+Feedback.Recipent = "Получатель";
+Feedback.Subject = "Тема обращения";
+Feedback.SubjectPayouts = "Выплаты диведендов/купонов";
+Feedback.SubjectTaxation = "Налогообложение";
+Feedback.SubjectTransaction = "Перевод средств";
+Feedback.SubjectTechnical = "Техническая проблема";
+Feedback.SubjectOther = "Другое";
+Feedback.ResultOk = "Хорошо";
+
+// My Profile
+MyProfile.Title = "Профиль";
+MyProfile.Edit = "Изменить";
+MyProfile.YourNumber = "Ваш номер";
+MyProfile.SerialNumber = "Серия и номер";
+MyProfile.IssuedBy = "Кем выдан";
+MyProfile.IssuedDate = "Дата выдачи";
+MyProfile.Address = "Адрес";
+MyProfile.Properties = "Реквизиты";
+MyProfile.BankName = "Наименование банка";
+MyProfile.BIK = "БИК";
+MyProfile.ChackingAccount = "Расчётный счёт";
+MyProfile.CorrAccount = "Корр. счёт";
+MyProfile.INN = "ИНН";
+MyProfile.PropertiesDescription = "По указанным реквизитам будут перечислены денежные средства при погашении инвестиционных паев";
+MyProfile.Exit = "Выйти из приложения";
+MyProfile.Passport = "Паспорт";
+MyProfile.ActionSheet.Exit = "Выйти";
+MyProfile.Alert.ExitPromt = "Вы действительно хотите выйти из учетной записи?";
+
+// Exchange
+Exchange.Title = "Обмен";
+Exchange.CurrencyBonds = "Облигации. Валютный";
+Exchange.SumInPortfolio = "Сумма в портфеле";
+Exchange.SumMoreThanMax = "Сумма обмена не может быть больше %@";
+Exchange.SumLessThanMin = "Сумма обмена не может быть меньше %@";
+Exchange.SumIsZero = "Сумма обмена не может быть равна 0";
+Exchange.SumLessOrMoreThan = "Сумма обмена не может быть меньше или больше %@";
+Exchange.ExchangeTarget = "На что меняем";
+Exchange.ChooseFond = "Выберите фонд";
+Exchange.Info.Title = "Информация об обмене";
+Exchange.Info.Description = "Средства будут переведены в выбранный вами фонд в течение нескольких рабочих дней.\n\nВсе расчёты будут осуществлены по стоимостям пая на дату исполнения заявки.\n\n";
+Exchange.CodeField = "КОД ИЗ SMS";
+Exchange.SignDescription = "На ваш номер отправлено SMS с кодом подтверждения для подписи следующих документов";
+Exchange.TimerText = "Запросить еще раз можно через %@";
+Exchange.ApproveTitle = "Заявка на обмен успешно подана";
+Exchange.ApproveText = "Средства будут переведены в выбранный вами фонд в течение  нескольких рабочих дней.\n\nВсе расчёты будут осуществлены по стоимостям пая на дату исполнения заявки.\n\n";
+
+// Sell
+Sell.Title = "Продать";
+Sell.Info.Title = "Информация о продаже";
+Sell.Info.Description = "Средства будут переведены на указанный вами счёт в течение нескольких рабочих дней.\n\nКонечная сумма, которая вам будет перечислена, будет рассчитана по стоимости пая на дату исполнения заявки.\n\n";
+
+Sell.ApproveTitle = "Заявка на продажу\nуспешно подана";
+Sell.ApproveText = "Средства будут переведены на указанный вами счёт в течение нескольких рабочих дней.\n\nКонечная сумма, которая вам будет перечислена, будет рассчитана по стоимости пая на дату исполнения заявки.\n\nВыполнение заявки вы можете отследить в разделе Операции";
+
+Sell.NotRF.Title = "Не являюсь налоговым резидентом РФ";
+Sell.NotRF.Text = "Вы не являетесь налоговым резидентом РФ, если на дату подписания настоящей заявки фактически находились в РФ менее 183 календарных дней в течение 12 следующих подряд месяцев";
+
+// MARK: Saving and brokerage accounts
+
+Account.Option.AboutTariff = "Информация о тарифе";
+Account.Option.AboutAccount = "О счёте";
+Account.Option.Requisites = "Реквизиты";
+Account.Option.Documents = "Документы";
+Account.Option.LatestOperations = "Последние операции";
+Account.MTSB.Popup.Title = "%@, это вы?";
+Account.MTSB.Popup.Description = "Пожалуйста, подтвердите вашу личность, это поможет предзаполнить данные анкеты и не заполнять её целиком вручную";
+
+
+// MARK: DU
+DU.IndividualStrategy = "Индивидуальное ДУ";
+DU.OptionsAndConditions = "Условия и ограничения";
+DU.Empty.Subtitle = "Чтобы начать инвестировать, выберите стратегию доверительного управления.";
+DU.RequestNotApproved.Info = "Заявка ещё не подтверждена, но вы уже можете пополнить стратегию. Если данные не будут подтверждены, мы вернем вам деньги.";
+DU.ClosingStrategyPrefix = "Договор будет закрыт. Вся сумма из текущей стратегии будет переведена вам на указанные ";
+DU.ClosingStrategy = "Договор будет закрыт.";
+DU.ClosingStrategyPostfix = "реквизиты.";
+DU.Profiling.GoToProfiling = "Пройти профилирование";
+DU.SMEV.Warning.title = "Заявка отклонена из-за некорректных данных";
+DU.Order.Reject.title = "Заявка отклонена";
+DU.PaymentPurpose.Warn = "Чтобы ДУ стало активным, необходимо пополнить счёт на %d рублей в течение %d дней с момента подписания договора.";
+DU.YourActivesWillBeHere = "Здесь будут ваши средства";
+DU.IncuficientFunds = "Чтобы стратегия начала работать, пополните на %@ %@ до %@";
+DU.Order.Reject.subtitle = "Заявка на открытие ДУ отклонена.";
+DU.SMEV.Warning.subtitle = "К сожалению, ваши персональные данные не прошли проверку. Возможно, вы где-то ошиблись при заполнении. Внимательно проверьте ФИО, паспорт, ИНН, а потом отправьте заявку ещё раз.";
+DU.SMEV.Warning.button = "Исправить данные";
+DU.AllStrategies = "Все стратегии";
+DU.GotoStrategies = "Посмотреть стратегии";
+DU.StrategiesTitle = "Стратегии";
+DU.ProfileTypeDescription = "Риск-профиль определён на основании профилирования из %@, на которые вы отвечали.";
+DU.requestCorrectionError = "Не удалось исправить данные, обратитесь в службу поддержки";
+DU.FundName = "ДУ Российские облигации";
+DU.FundType = "Пополнение стратегии";
+DU.EmptyPortfolio.Title = "Здесь будут ваши стратегии";
+DU.EmptyPortfolio.Text = "Чтобы продолжить инвестировать, выберите стратегию доверительного управления.";
+
+//MARK: DU strategies
+DU.RiskProfile = "Риск-профиль";
+DU.StandartStrategies = "Стандартные стратегии";
+DU.ChooseStrategy = "Выбрать стратегию";
+DU.Strategies.Info.Title = "Размер доходности";
+DU.Strategies.Info.Subtitle = "Ожидаемая доходность, не является гарантированой.";
+DU.Strategies.Info.ButtonTitle = "Понятно";
+DU.Strategies.Rest.Title = "Другие стратегии";
+DU.Strategies.Rest.Subtitle = "Подобранные по результатам профилирования";
+DU.NonStandartStrategies.Profiling.Title = "Мы подберем для вас индивидуальные инвестиционные стратегии. Для этого ответьте на 9 вопросов.";
+DU.StandartStrategies.Profiling.Title = "Дополнительные стратегии будут доступны после прохождения инвестиционного профилирования";
+DU.Strategies.Details.Description = "Описание";
+DU.Strategies.Details.Container.Title = "Показатели";
+DU.Strategies.Details.Dynamics.Title = "Динамика";
+DU.Strategies.RiskProfile.Title = "Риск-профиль";
+DU.Strategies.IISTitle = "Стратегия с ипользованием ИИС";
+DU.Strategies.IISDescription = "ИИС позволяет получить вычет 13% от суммы инвестирования за год. Максимальная сумма к возврату составляет 52 000 рублей в год. Для этого необходимо продержать вложенные деньги хотя бы три года. У вас может быть открыт только один ИИС";
+DU.EmptyDesciption = "Пополните стратегию и начните \nполучать доход.";
+DU.NonstandartStrategiesDisabled = "Скоро здесь появятся стандартные стратегии ИИС для инвестирования.";
+DU.Empty.NoData.Text = "Скоро появится динамика доходности стратегии";
+
+//MARK: DU composition
+DU.Composition.NoIncome = "Нет дохода";
+DU.Composition.Sold = "Бумага продана";
+DU.Composition.RUBPart = "рублёвые";
+DU.Composition.USDPart = "валютные";
+
+//MARK: DU Details
+DU.Details.RUBPart = "Рублёвые";
+DU.Details.USDPart = "Валютные";
+DU.Details.AllPart = "Все";
+
+//MARK: Saving account
+SavingAccount.Title = "Накопительный счёт";
+SavingAccount.Action.Open = "Открыть счёт";
+SavingAccount.Action.Continue = "Продолжить";
+SavingAccount.Action.NoRefill = "Нет, перейти к регистрации";
+SavingAccount.Action.Restart = "Начать заново";
+SavingAccount.Action.Update = "Обновить";
+SavingAccount.State.ProcessingInfo = "Ваши данные находятся\nв обработке";
+SavingAccount.State.InterruptedOpening = "Вы уже начали процесс открытия  счёта, но прервали его.";
+
+SavingAccount.RequestApproved.Title = "Заявка\nуспешно подана!";
+SavingAccount.RequestApproved.Info = "Как только ваши данные пройдут обработку вы сможете пользоваться счётом. Обычно это занимает несколько минут.";
+SavingAccount.RequestNotApproved.Info = "Заявка ещё не подтверждена, но вы уже можете сделать пополнение счёта. Если данные не будут подтверждены, мы вернем вам деньги.";
+SavingAccount.Signature.Documents.EdoText = "Нажимая Подписать, вы подтверждаете, что ознакомлены с соглашением об ЭДО";
+SavingAccount.Signature.Documents.EdoText.LinkText = "соглашением об ЭДО";
+SavingAccount.Operations.Title = "Деньги в пути";
+SavingAccount.Operations.Refill = "Пополнение счёта";
+
+//MARK: Saving account withdrawal
+SavingAccount.Withdrawal.WithdrawTo = "Куда выводим?";
+SavingAccount.Withdrawal.Action = "Вывести средства";
+SavingAccount.Withdrawal.SaveRequisites = "Сохранить реквизиты";
+SavingAccount.Withdrawal.Attention.Title = "Убедитесь, что выводите средства на свой счёт";
+SavingAccount.Withdrawal.Attention.Subtitle = "Для вашей безопасности выводы денег на чужие счета ограничены.";
+SavingAccount.Withdrawal.TotalAmount = "Средств на счету";
+SavingAccount.Withdrawal.Balance = "Останется после вывода";
+SavingAccount.Withdrawal.Input = "Введите число или укажите его с помощью\nползунка";
+SavingAccount.Withdrawal.Sum = "Сумма к выводу";
+SavingAccount.Withdrawal.Title = "Вывод средств";
+SavingAccount.Withdrawal.Error.BankName = "Поле обязательно к заполнению";
+SavingAccount.Withdrawal.Error.Bik = "Бик заполнен неверно";
+SavingAccount.Withdrawal.Error.KorrAccount = "Корр. счёт заполнен неверно";
+SavingAccount.Withdrawal.Error.BankAccount = "Счёт получателя заполнен неверно";
+SavingAccount.Withdrawal.DeleteBanner = "Счёт удалён";
+SavingAccount.Withdrawal.Funds = "Доступно к выводу на текущий момент";
+SavingAccount.Withdrawal.ReservedFunds = " после завершения расчётов по недавно проданным бумагам будет доступно ещё:";
+SavingAccount.Withdrawal.InfoTitle = "Расчёты на бирже";
+SavingAccount.Withdrawal.InfoDescription = "Биржа проводит расчёты по некоторым сделкам с задержкой в 1-2 рабочих дня.\n\nСредства по вашим недавно проданным бумагам станут доступны к выводу %@, и вы сможете вывести всю сумму целиком.";
+SavingAccount.Withdrawal.VirtualCardAttentionDescription = "Выводить средства на виртуальные карты запрещено законодательством РФ. Пожалуйста, введите данные обычной банковской карты или счёта.";
+
+
+//MARK: Saving account opened
+SavingAccount.Opened.Title = "Заявление успешно\nподано!";
+SavingAccount.Opened.Text = "Ваши данные отправлены на подтверждение, но пополнить счёт вы можете уже сейчас";
+SavingAccount.Opened.ButtonTitle = "Пополнить счёт";
+
+SavingAccount.Pincode.ErrorText = "Ошибка";
+SavingAccount.Pincode.SmsText = "На ваш номер отправлено SMS с кодом подтверждения";
+SavingAccount.Pincode.SmsDocumentText = "На ваш номер отправлено SMS с кодом подтверждения для подписи следующих документов";
+//MARK: Success signature
+SavingAccount.Signature.Success.Title = "Отлично!";
+SavingAccount.Signature.Success.Messsage = "Осталось подписать документы, и всё готово. Это не займет много времени.";
+SavingAccount.Signature.Success.Action = "Перейти к документам";
+
+//MARK: Saving account signature
+SavingAccount.Signature.PersonalData.Title = "Подтверждение данных";
+SavingAccount.Signature.Documents.Title = "Подписание документов";
+
+//MARK: Saving account refill
+SavingAccount.Refill.Action = "Пополнение";
+SavingAccount.Refill.AmountRefill.Title = "Сумма пополнения";
+SavingAccount.Refill.AmountRefill.Description = "Введите число или укажите его с помощью ползунка";
+SavingAccount.Refill.AmountSecurites = "Количество приобретаемых бумаг";
+SavingAccount.Refill.AmountSecurities.Count = "шт";
+SavingAccount.Refill.Cost = "Стоимость бумаги";
+SavingAccount.Refill.BrokerComission = "Комиссия брокера";
+SavingAccount.Refill.CardComission = "Комиссия за перевод с карты";
+SavingAccount.Refill.WillBeCredited = "Будет зачислено";
+SavingAccount.Refill.Before = "до %@";
+SavingAccount.Refill.CardCommission.Title = "Комиссия за перевод";
+SavingAccount.Refill.CardCommission.Details = "С карты МТС Банка — 1%. С карт других банков — 2%.";
+SavingAccount.Refill.PaymentError = "Ошибка оплаты";
+SavingAccount.Refill.InfoPopup.Title = "Комиссия за сделку";
+SavingAccount.Refill.InfoPopup.Message = "С карты МТС Банка – 1%.\nС карт других банков – 2%.";
+
+//MARK: Withdrawal success
+SavingAccount.Withdrawal.Success.Title = "Заявка на вывод\nуспешно подана";
+SavingAccount.Withdrawal.Success.subTitle = "Средства будут переведены на указанный вами счёт в течение нескольких рабочих дней.\n\nВыполнение заявки вы можете отследить в разделе Операции";
+SavingAccount.Withdrawal.Success.Action = "Мои активы";
+
+//MARK: BondPlacement
+BondPlacement.Title = "Размещение";
+
+BondPlacement.HeaderDateTitle = "Дата погашения";
+BondPlacement.HeaderPercentTitle = "Доходность";
+BondPlacement.HeaderYear = "в год";
+BondPlacement.HeaderYeldPerAnnumRange = "%@%%-%@%%";
+BondPlacement.HeaderYeldPerAnnumFix = "%@%%";
+
+BondPlacement.AlertTitle = "Ставка купона была изменена эмитентом, вы можете переразместить заявку";
+
+BondPlacement.RequestTitle = "Мои заявки";
+BondPlacement.BuyButtonTitle = "Купить";
+
+BondPlacement.RequestCancelButtonTitle = "Снять заявку";
+BondPlacement.RequestStatusInProgress = "В исполнении";
+BondPlacement.RequestStatusPartiallyDone = "Частично исполнена";
+BondPlacement.RequestStatusCancelled = "Отменена";
+BondPlacement.RequestStatusDismissed = "Снята";
+BondPlacement.RequestStatusDone = "Исполнена";
+BondPlacement.RequestStatusError = "Ошибка";
+BondPlacement.RequestStatusCancelInProgress = "В процессе снятия";
+
+BondPlacement.StatusWillFinishTitle = "Приём заявок завершится";
+BondPlacement.StatusWillStartTitle = "Приём заявок начнётся";
+BondPlacement.StatusFinishedTitle = "Приём заявок завершён";
+
+BondPlacement.InfoTitle = "Информация о выпуске";
+BondPlacement.InfoParTitle = "Номинал";
+BondPlacement.InfoCouponRangeTitle = "Диапазон купона";
+BondPlacement.InfoCouponFixTitle = "Ставка купона";
+BondPlacement.InfoIdentificatorTitle = "Идентификатор";
+BondPlacement.InfoPaymentPeriodTitle = "Периодичность выплат";
+BondPlacement.InfoPaymentPeriodDescription = "%@ дня";
+BondPlacement.InfoAuctionTitle = "Аукцион";
+BondPlacement.InfoAuctionDescription = "на купон";
+BondPlacement.InfoStartRequestsTitle = "Старт приёма заявок";
+BondPlacement.InfoEndRequestsTitle = "Окончание приёма";
+BondPlacement.InfoCurrencyTitle = "Валюта расчётов";
+BondPlacement.InfoMaturityDateTitle = "Дата погашения";
+
+BondPlacement.RequestItemCellCouponeRange = "| купон %@ %%";
+BondPlacement.RequestItemCellCouponeFix = "любой купон";
+BondPlacement.RequestItemCellAmount = "%@ шт";
+BondPlacement.RequestItemPartiallyDoneCellAmount = "%@ из %@ шт";
+
+BondPlacement.TruncatedMaturityDate = "%d %@ %d";
+
+BondPlacement.SelectActionModalTitle = "Вы действительно хотите снять заявку?";
+BondPlacement.SelectActionModalDescription = "Заявка будет снята. Средства вернутся обратно на ваш брокерский счёт.";
+BondPlacement.SelectActionModalActionButtonTitle = "Снять заявку";
+BondPlacement.SelectActionModalDefaultActionButtonTitle = "Выполнить";
+BondPlacement.SelectActionModalDefaultCloseButtonTitle = "Отмена";
+BondPlacement.InfoTitle = "Размещение";
+BondPlacement.InfoText = "Букбилдинг ('взрослая книга') — один из способов размещения облигаций, при котором происходит формирование книги заявок инвесторов для максимально эффективного определения цены. Сегодня это самый популярный в мире формат размещения ценных бумаг. Организатор выпуска открывает книгу заявок на приобретение облигаций на определенный срок (как правило, несколько часов, если речь идет про хорошо знакомого рынку заемщика).
+
+Бывает, что объем заявок на участие в выпуске от инвесторов в несколько раз превышает планируемый объем заимствований. В таких случаях организатор может снизить первоначально объявленный диапазон доходности, в результате эмитент получает возможность занять деньги дешевле, чем предполагалось ранее. Иначе говоря, если спрос на долг эмитента большой, то эмитент снижает предлагаемую ставку до тех пор, пока не выровняется объём размещения с желающими купить, под УЖЕ сниженную ставку. Похоже на аукцион.";
+
+BondPlacement.UserInProgress.Title = "Ваш брокерский счёт в процессе открытия";
+BondPlacement.UserInProgress.Description = "Чтобы торговать инструментами, или размещать заявки, у вас должны быть свободные средства на брокерском счёте. Вы уже можете зачислить деньги по реквизитам, пополнение с карты будет доступно после открытия счёта.
+
+Перевод по реквизитам может производиться в течение нескольких банковских дней.";
+BondPlacement.UserInProgress.ActionButtonTitle = "Пополнить по реквизитам";
+BondPlacement.UserInProgress.CancelButtonTitle = "Пополнить картой позже";
+
+//MARK: BondPlacementInfo
+BondPlacementInfo.HeaderTitle = "Размещения";
+BondPlacementInfo.ActionButtonTitle = "Понятно";
+BondPlacementInfo.Fixed.Title = "Размещение с фиксированным размером купона";
+BondPlacementInfo.Fixed.Description = "Размещение проводится по фиксированному размеру купона. Это хорошая возможность приобрести облигации на первичном рынке с гарантированными условиями.\n\nПри покупке с фиксированной ставкой купона, просто выберите нужное количество облигаций. Если ваша заявка будет исполнена эмитентом, облигации появятся в разделе «Мои активы».";
+BondPlacementInfo.Range.Title = "Размещение с аукционом на размер купона";
+BondPlacementInfo.Range.Description = "Данное размещение облигаций проводится с аукционом по размеру купона. Вы можете сами определить минимальный размер купона, с которым вы готовы участвовать в размещении.\n\nКомпания-эмитент оценивает спрос на облигации и определяет размер купона, который она готова выплачивать инвесторам. Например, если компания установит купон 7,1%, то заявки на облигации с указанием минимального купона 7,5% не исполнятся.\n\nЧтобы избежать такой ситуации, укажите не слишком большой уровень купона, ближе к нижней границе указанного диапазона или выберите опцию «Купить по любой ставке купона», чтобы участвовать в любом случае.";
+
+//MARK: BondTrade
+BondTrade.Title = "Покупка";
+BondTrade.BuyButtonTitle = "Купить";
+
+BondTradeInstrumentCellPrice = "%@ ₽";
+BondTradeInstrumentCellAmount = "за %@ облиг.";
+
+BondTradeFundsCellTitle = "Мои средства";
+BondTradeFundsCellLot = "%@ лот";
+BondTradeFundsCellBond = "%@ облиг.";
+
+BondsTradeAmountCellTitle = "Сколько облигаций покупаем?";
+BondTradeAmountCellDescription = "Введите количество или укажите его с помощью ползунка";
+BondsTradeAmountMinErrorTitle = "Значение не должно быть меньше %@";
+BondsTradeAmountMaxErrorTitle = "Значение не должно быть больше %@";
+BondsTradeAmountNotLotSizeTitle = "Значение должно быть кратно %@";
+
+bondsTradeSumCellCommission = "Сумма с учетом комиссии %@ ";
+BondsTradeSumCellLackFundsAlert = "Недостаточно средств на брокерском счёте";
+BondsTradeSumCellLackFundsButtonTitle = "Пополнить счёт";
+
+BondTradeCouponRateCellRate = "Укажите ставку купона (шаг %@ %@)";
+BondTradeCouponRateCellRange = "Диапазон %@ - %@";
+BondTradeCouponRateCellMinAlert = "Значение не должно быть меньше %@";
+BondTradeCouponRateCellMaxAlert = "Значение не должно быть больше %@";
+BondTradeCouponRateCellMultiplyAlert = "Значение должно быть кратно %@";
+BondTradeCouponRateCellAnyRateTitle = "Купить по любой ставке купона";
+
+BondTradeCouponFixCellCouponValue = "Ставка купона: %@%%";
+
+BondTradeSuccessTitle = "Заявка зарегистрирована";
+BondTradeSuccessDescription = "Ваша заявка на участие в размещении облигаций принята. Информацию об итогах участия вы сможете увидеть в разделе «Мои активы» по окончании размещения.";
+BondTradeSuccessToActivesButtonTitle = "Перейти в мои активы";
+BondTradeSuccessBackButtonTitle = "Вернуться к размещениям";
+BondTradeFailureTitle = "Ошибка";
+BondTradeFailureDescription = "Произошла ошибка на сервере, данные не были переданы. Попробуйте ещё раз немного позже. Мы уже работаем над исправлением этой проблемы.";
+BondTradeFailureButtonTitle = "Назад";
+
+BondTrade.InfoCell.Title = "Остаток средств, доступный для участия в размещении";
+BondTrade.SettlementModalView.HeaderTitle = "Расчёты на бирже";
+BondTrade.SettlementModalView.Description = "Средства для участия в размещении облигаций резервируются из остатка средств на сегодняшний день (T0). Часть отображаемого свободного остатка может быть недоступна в данном режиме, так как по проданным бумагам ещё не прошли расчёты.";
+
+//MARK: Brokerage account
+Brokerage.BrokerAccount = "Брокерский счёт";
+Brokerage.Action.Open = "Открыть счёт";
+Brokerage.Action.Continue = "Продолжить";
+Brokerage.Action.Restart = "Начать заново";
+Brokerage.Action.Update = "Обновить сейчас";
+Brokerage.State.InterruptedOpening = "Вы уже начали процесс открытия\nсчёта, но прервали его.";
+Brokerage.State.ProcessingInfo = "Ваши данные\nнаходятся на проверке";
+Brokerage.State.RequestRejected = "Ваша заявка отклонена";
+Brokerage.SelectAsset = "Выбрать актив";
+Brokerage.LotsAmount = "%@ - %@ шт";
+Brokerage.LotsAmountTyped = "%@ - %@ %@";
+Brokerage.AccountInfo.Title = "Здесь будут ваши активы";
+Brokerage.AccountInfo.Text = "Чтобы покупать или продавать акции, облигации, у вас должен быть открыт брокерский счёт.";
+Brokerage.AccountInfo.Description = "Услуга Брокерский счёт реализуется путем открытия счёта в АО «ИК «Ай Ти Инвест». АО «ИК «Ай Ти Инвест» является партнером ПАО МТС по предоставлению брокерских услуг.";
+Brokerage.RequestRejected.Title = "В заявке допущена ошибка";
+Brokerage.RequestRejected.Info = "Ваша заявка была отклонена. Проверьте правильность указанных данных.";
+Brokerage.RequestRejected.ButtonTitle = "Проверить";
+Brokerage.Stocks.Title = "Акции";
+Brokerage.BPIF.Title = "Биржевые фонды";
+Brokerage.AvailableFunds.Title = "Свободные средства";
+Brokerage.AvailableFunds.Refill = "Пополнить";
+Brokerage.Withdrawal.AmountInput.Hint.WithdrawAllAvailableOnly = "При балансе менее %@ возможно вывести только весь остаток средств";
+Brokerage.Withdrawal.AmountInput.Warning.MinimumAmount = "Минимальная сумма для вывода %@";
+Brokerage.Withdrawal.Title.AvailableBalance.Mtsb = "Всего свободных средств";
+Brokerage.Withdrawal.Title.AvailableBalance.Iti = "Средств на счёте";
+Brokerage.Withdrawal.Title.BalanceAfterWithdrawal = "Останется после вывода";
+Brokerage.Withdrawal.Title.ReceivedAmount = "Сумма к зачислению";
+Brokerage.Withdrawal.Title.Fee = "Комиссия";
+Brokerage.Withdrawal.Title.Tax = "Налог";
+Brokerage.Withdrawal.Warning.FeeForWithdrawAll = "При выводе средств будет также удержан налог согласно законодательству РФ.";
+Brokerage.WithdrawFunds.Title = "Вывести средства";
+Brokerage.Notification.Title.MoneyOnTheWay = "Деньги в пути";
+Brokerage.Notification.Title.MoneySent = "Деньги отправлены";
+Brokerage.Notification.Title.OrderInProcess = "Поручение в исполнении";
+Brokerage.Notification.Title.OrderCompleted = "Поручение исполнено";
+Brokerage.Notification.Title.OrderCanceled = "Поручение отменено";
+Brokerage.YieldPeriod.OneDay = "доходность: за день";
+Brokerage.YieldPeriod.OneWeek = "доходность: за неделю";
+Brokerage.YieldPeriod.OneMonth = "доходность: за 1 месяц";
+Brokerage.YieldPeriod.ThreeMonths = "доходность: за 3 месяца";
+Brokerage.YieldPeriod.OneYear = "доходность: за год";
+Brokerage.YieldPeriod.ThreeYears = "доходность: за 3 года";
+Brokerage.YieldPeriod.AllTime = "доходность: за всё время";
+Brokerage.DayProfitPrefix = "за день";
+Brokerage.WeekProfitPrefix = "за неделю";
+Brokerage.MonthProfitPrefix = "за 1 месяц";
+Brokerage.ThreeMonthProfitPrefix = "за 3 месяца";
+Brokerage.SixMonthProfitPrefix = "за 6 месяцев";
+Brokerage.YearProfitPrefix = "за год";
+Brokerage.ThreeYearProfitPrefix = "за 3 года";
+Brokerage.FiveYearProfitPrefix = "за 5 лет";
+Brokerage.AllTimeProfitPrefix = "за всё время";
+Brokerage.LotPrice = "1 лот = %d %@, %@ ₽";
+Brokerage.CleanPriceLabel = "%@ без НКД";
+
+BondPlacement.SelectActionModalTitle = "Вы действительно хотите снять заявку?";
+BondPlacement.SelectActionModalDescription = "Заявка будет снята. Средства вернутся обратно на ваш брокерский счёт";
+BondPlacement.SelectActionModalActionButtonTitle = "Снять заявку";
+BondPlacement.SelectActionModalDefaultActionButtonTitle = "Выполнить";
+BondPlacement.SelectActionModalDefaultCloseButtonTitle = "Отмена";
+
+
+YieldPeriod.Title = "доходность: за ";
+
+//MARK: Brokerage instruments
+Brokerage.Instruments.stockType = "акций";
+Brokerage.Instruments.bondType = "облигаций";
+Brokerage.Instruments.bpifType = "Паев";
+Brokerage.Instuments.title = "Активы";
+Brokerage.Instrument.AccruedInterest = "НКД";
+Brokerage.Instrument.AccruedInterestDefinition = "Накопленный купонный доход (НКД) — это часть купонного процентного дохода по облигации, рассчитываемая пропорционально количеству дней, прошедших от даты выпуска купонной облигации или даты выплаты предшествующего купонного дохода.";
+
+//MARK: Brokerage requisites
+Brokerage.Requisites.FullBankRecepient.Title = "Банк получатель";
+Brokerage.Requisites.IntermediaryBank.Title = "Банк посредник";
+Brokerage.Requisites.RefillCurrency.Title = "Реквизиты для пополнения в других валютах";
+Brokerage.Requisites.Recipient = "Получатель";
+Brokerage.Requisites.KPP = "КПП";
+Brokerage.Requisites.Purpose = "Назначение платежа";
+Brokerage.Requisites.BankName = "Наименование банка";
+Brokerage.Requisites.SwiftCode = "SWIFT код";
+Brokerage.Requisites.PersonalAccount = "Лицевой счёт";
+Brokerage.Requisites.Selector.usd = "В долларах";
+Brokerage.Requisites.Selector.eur = "В евро";
+Brokerage.Requisites.Selector.rub = "В рублях";
+Brokerage.Requisites.Resend = "Переслать реквизиты";
+Brokerage.Requisites.Section.Info = "Для пополнения\nброкерского счёта\nв рублях";
+Brokerage.Requisites.Section.Selector = "Реквизиты для пополнения\nв других валютах";
+Brokerage.Requisites.CopiedMessage = "Скопировано";
+Brokerage.Requisites.RUB.Title = "Для пополнения брокерского счёта в рублях";
+Brokerage.Requisites.USD.Title = "Для пополнения брокерского счёта в долларах США";
+Brokerage.Requisites.EUR.Title = "Для пополнения брокерского счёта в евро";
+
+//MARK: Brokerage tariffs
+Brokerage.Tariffs.Title = "Тариф брокерского\nсчёта";
+Brokerage.Tariffs.CustodyService = "Депозитарное обслуживание";
+Brokerage.Tariffs.IfTrade = "Если торгуете в течение месяца";
+Brokerage.Tariffs.NotTrade = "Если не торгуете";
+Brokerage.Tariffs.PerDeal = "За сделку";
+Brokerage.Tariffs.Comission = "Комиссия";
+Brokerage.Tariffs.NoComission.Title = "ДРУГИХ КОМИССИЙ НЕ БУДЕТ";
+Brokerage.Tariffs.NoComission.Info = "Тарифные условия установлены в документах на открытие вашего брокерского счёта.";
+
+//MARK: Brokerage refill
+Brokerage.Refill.Attention.Title = "Средства будут зачислены на\nследующий рабочий день";
+Brokerage.Refill.Attention.Message = "При переводе по реквизитам сроки перевода зависят от банка отправителя средств";
+Brokerage.Refill.TransitMoney = "В процессе зачисления";
+
+//MARK: Brokerage Instrument Position
+Brokerage.Instrument.Position.DateFromPrefix = "с ";
+
+//MARK: Brokerage Account Blocked Banner
+Brokerage.AccountBlockedBanner.Message.Format = "Для выяснения причин обратитесь в ITI Capital по телефону: %@ или по почте: %@";
+
+//MARK: Brokerage Trading Order Result
+Brokerage.TradingOrderResult.CancelButtonTitle.Buy = "Отменить покупку";
+Brokerage.TradingOrderResult.CancelButtonTitle.Sell = "Отменить продажу";
+Brokerage.TradingOrderResult.Warning = "Подробную информацию по продаже вы всегда можете найти в разделе «Операции⁠»";
+Brokerage.TradingOrderResult.Success = "Подробную информацию по приобретению вы всегда можете найти в разделе «Операции»";
+Brokerage.TradingOrderResult.Buy.Made = "Покупка выполнена";
+Brokerage.TradingOrderResult.Sell.Made = "Продажа выполнена";
+Brokerage.TradingOrderResult.Error.cannotPerformOperation = "Поручение не может быть исполнено";
+
+//MARK: Brokerage Trading Order Request
+Brokerage.TradingOrderRequest.WrongPrice = "Произошла ошибка при получении цены инструмента";
+Brokerage.TradingOrderRequest.Sell.Hint = "Указана минимальная цена продажи, сделка совершится по лучшей для вас цене, разница будет возвращена вам на брокерский счёт";
+Brokerage.TradingOrderRequest.Buy.Hint = "Указана максимальная цена покупки, сделка совершится по лучшей для вас цене, разница будет возвращена вам на брокерский счёт";
+
+//MARK: Operation Details Info
+OperationDetails.Info.Title.Buying = "Информация\nо покупке";
+OperationDetails.Info.Title.Selling = "Информация\nо продаже";
+OperationDetails.Info.Description.Buying = "При нажатии кнопки «Купить» на биржу будет выставлено поручение на покупку выбранного количества ценных бумаг по цене не выше указанной на экране. Покупка будет произведена по наилучшей цене, но не выше указанной в поручении. Если на бирже недостаточное предложение выбранных ценных бумаг, поручение может быть исполнено частично или не исполнено совсем. Бумаги будут зачислены на ваш депозитарный счёт АО «ИК «Ай Ти Инвест» в сроки в соответствии с режимом торгов ММВБ.";
+OperationDetails.Info.Description.Selling = "При нажатии кнопки «Продать» на биржу будет выставлено поручение на продажу выбранного количества ценных бумаг по цене не ниже указанной на экране. Продажа будет произведена по наилучшей цене, но не ниже указанной в поручении. Если на бирже недостаточный спрос на выбранные ценные бумаги, поручение может быть исполнено частично или не исполнено совсем. Средства от продажи бумаг будут зачислены на ваш брокерский счёт АО «ИК «Ай Ти Инвест» в сроки в соответствии с режимом торгов ММВБ.";
+OperationDetails.Info.Description.LinkText = "режимом торгов ММВБ";
+OperationDetails.Info.InfoText = "Услуги предоставляет АО «ИК «Ай Ти Инвест». Лицензия профессионального участника рынка ценных бумаг № 045-07514-100000 от 17.03.2004 на осуществление брокерской деятельности, лицензия профессионального участника рынка ценных бумаг на осуществление депозитарной деятельности № 045-08543-000100 от 14.07.2005.";
+
+//MARK: Shared
+Shared.YearlyProfit = "годовых";
+Shared.Done = "Готово";
+Shared.Save = "Сохранить";
+Shared.BondPaidOff = "Средства поступят вам на брокерский счёт в течение 7 дней с даты погашения бумаг";
+
+//MARK: Deprecated
+Deprecated.DescriptionActionText = "в службу поддержки.";
+
+//MARK: Operations
+Operations.Page.Title.Funds = "ПИФЫ";
+Operations.Page.Title.Brokerage = "Брокерский счёт";
+Operations.Page.Title.MTSBrokerage = "Брокерский счёт \nМТС Банк";
+Operations.Page.Title.DU = "ДУ";
+Operations.Today = "Сегодня";
+Operations.AllOperations = "Все операции";
+Operations.CardOperationType = "Перевод с карты";
+Operations.BuyPifOperationType = "Выдача паев";
+Operations.SellPifOperationType = "Погашение паев";
+Operations.UndefinedPifOperationType = "Неизвестная операция";
+Operations.NoDataError.Title = "Нет данных";
+Operations.NoDataError.Description = "Начните инвестировать: выберите фонд и оставьте свою первую заявку на покупку";
+Operations.NoDataDUError.Description = "Операции появятся здесь, как только стратегия начнет работать";
+Operations.LoadingError.Title = "Ошибка загрузки";
+Operations.LoadingError.Description = "Не удалось загрузить данные";
+
+//MARK: Brokerage Operations
+Brokerage.Operations.EmptyView.Title = "Нет данных";
+Brokerage.Operations.EmptyView.Subtitle = "Начните инвестировать:\nвыберите акцию или облигацию\nи оставьте свою первую заявку на покупку";
+Brokerage.Operations.ErrorView.Title = "Ошибка загрузки";
+Brokerage.Operations.FiltersSelection.Title = "Фильтрация";
+Brokerage.Operations.Filter.Title.All = "Все";
+Brokerage.Operations.Filter.Title.Stocks = "Акции";
+Brokerage.Operations.Filter.Title.Bonds = "Облигации";
+Brokerage.Operations.Filter.Title.RefillAndWithdrawal = "Пополнение/Вывод";
+Brokerage.Operations.Filter.Title.Fee = "Комиссия";
+Brokerage.Operations.Filter.Button.Title = "фильтр: %@";
+Brokerage.Operation.Title.Withdrawal = "Вывод средств";
+Brokerage.Operation.Title.Refill = "Пополнение счёта";
+Brokerage.Operation.Title.Fee = "Комиссия";
+Brokerage.Operation.Title.Buying = "Покупка";
+Brokerage.Operation.Title.Selling = "Продажа";
+Brokerage.Operation.Title.Coupon = "Купон";
+Brokerage.Operation.Title.Dividends = "Дивиденды";
+Brokerage.Operation.Title.Other = "Прочее";
+Brokerage.Operation.AdditionalInfo.Amount = "%@ шт.";
+Brokerage.Operation.AdditionalInfo.AmountWithPrice = "%@ шт. по %@";
+
+// MARK: DU
+DU.Profiling.Title = "Профилирование";
+DU.Profiling.Action.ShowStrategies = "Подобрать стратегии";
+DU.Profiling.HintMessage = "Выберите вариант ответа!";
+DU.Information.TopTitle = "Доверительное управление";
+DU.Information.TopSeparatedTitle = "Доверительное\nуправление";
+DU.Information.TopCompactTitle = "ДУ";
+DU.Information.TopText1 = "Воспользуйтесь персональным портфельным предложением.";
+DU.Information.TopText2 = "Теперь стратегии профессиональных управляющих доступны для инвестирования";
+DU.Information.Action.More = "Узнать больше";
+DU.Information.BottomTitle = "Мы подберем инвестиционные стратегии для вас";
+DU.Information.BottomText = "Ответьте на %@, и они будут сформированы.";
+DU.Information.Action.Start = "Начать";
+DU.Progress.Info = "Подбираем вам оптимальные стратегии для инвестирования";
+DU.Checkout.ActionTitle = "Оформить";
+DU.TaxAttention.Text = "Согласно законодательству РФ с вас\nбудут автоматически удержаны налоги\n на доход";
+DU.Withdrawal.NotFormedStrategy = "Будут выведены все средства,\nкоторые вы вносили по договору.";
+Du.Withdrawal.TaxAttention = "Конечная сумма может немного\nизмениться из-за удержания налога на\nдоход и комиссии управляющего.";
+DU.Withdrawal.AllFunds = "Будут выведены все средства со счёта";
+DU.Withdrawal.CloseDU = "Закрыть договор ДУ";
+DU.Withdrawal.NDFL = "Получить налоговый вычет";
+DU.Withdrawal.RefuseNDFL = "Отказаться от налогового вычета";
+DU.Withdrawal.NDFL.Info.title = "Hалоговый вычет";
+DU.Withdrawal.NDFL.Info.text = "При продаже ценных бумаг, находившихся в собственности свыше трёх лет, возможно применение налогового вычета на полученный доход";
+DU.Withdrawal.Action = "Вернуть средства";
+DU.Withdrawal.ActionShort = "Вернуть";
+DU.Withdrawal.CloseAction = "Закрыть договор";
+DU.Withdrawal.AmountTitle = "Сумма к возврату";
+DU.Withdrawal.AmountLeft = "Останется после возврата";
+DU.Withdrawal.Destination = "Куда возвращаем?";
+DU.Withdrawal.Attention = "Для вашей безопасности возврат денежных средств на счета других лиц ограничен";
+DU.Withdrawal.Error.CloseUnavailable = "Закрытие договора сейчас не доступно. Попробуйте позднее или обратитесь в поддержку.";
+DU.Opened.Title = "Заявление успешно\nподано!";
+DU.Opened.Text = "Заявление о присоединении к договору ДУ отправлено, но перевести деньги можно уже сейчас.";
+DU.CloseSuccess.Title = "Заявка на закрытие\nуспешно подана";
+DU.Compositional.HeaderSoldTitle = "Проданные бумаги";
+DU.Compositional.DescriptionTextAll = "Все средства";
+DU.Compositional.DescriptionTextRubles = "Рублевая часть";
+DU.Compositional.DescriptionTextForeign = "Валютная часть";
+
+//MARK: DU IIS
+DU.IIS.Withdrawal.Title = "Возврат с ИИС";
+DU.IIS.Withdrawal.Message = "Вы лишитесь налогового вычета при\nвозврате денег с ИИС раньше, чем\nчерез 3 года, а договор будет закрыт.";
+DU.IIS.Withdrawal.Cancel = "Отменить возврат";
+
+//MARK: DU Withdrawal failed
+DU.Withdrawal.Failed.Title = "Заявка на возврат\nотклонена";
+DU.Withdrawal.Failed.Message.PartOne = "Пожалуйста, обратитесь в УК\n«Система Капитал» по телефону:\n";
+DU.Withdrawal.Failed.Message.PartTwo = " или по почте:\n";
+
+//MARK: DU Details
+DU.Details.DisclosureCell.Title = "Описание стратегии";
+
+//MARK: Funds
+Funds.description = "ПИФы";
+Funds.dynamics = "Динамика пая";
+Funds.structure = "Структура";
+Funds.about = "О фонде";
+Funds.fundsTitle = "Фонды";
+Funds.MyFundsTitle = "Мои фонды";
+Funds.fundWithdrawSelection = "Из какого фонда выводим?";
+
+//MARK: Sell pai
+SellPai.SellerGet.Title = "Вы получите";
+SellPai.SellerGet.Hint = "Конечная сумма, которая вам будет перечислена,\nбудет рассчитана по стоимости пая на дату\nисполнения заявки";
+SellPai.AddRequisite.Title = "Добавить счёт";
+SellPai.Attention.Title = "Укажите свой счёт";
+
+//MARK: Sell pai confirm
+SellPai.Confirm.Title = "Заявка на продажу\nуспешно подана";
+SellPai.Confirm.Description = "Средства будут переведены на указанный вами счёт в течение нескольких рабочих дней.\n\nКонечная сумма, которая вам будет перечислена, будет рассчитана по стоимости пая на дату исполнения заявки.\n\n";
+
+//MARK: Buy pai
+BuyPai.Title = "Оплата";
+BuyPai.Protection = "Данные карты защищены";
+BuyPai.Info.Message = "Создайте заявку на приобретение\nпаев фонда. Затем переведите\nсредства по указанным в заявке\nреквизитам.\n\nПаи будут выданы в течение\nнескольких рабочих дней.\n\nВы можете отследить ход исполнения\nзаявок в разделе Операции.";
+BuyPai.Card.IssueDate = "Срок действия";
+BuyPai.Card.CVV = "CVV/CVC код";
+BuyPai.Card.CVVNumber = "Код";
+BuyPai.Card.Number = "Номер карты";
+BuyPai.Card.Title = "Банковская карта";
+BuyPai.Hint = "Конечная сумма, которая вам будет\nперечислена, будет рассчитана по\nстоимости пая на дату исполнения заявки";
+BuyPai.Pay = "Инвестировать";
+BuyPai.Amount.Title = "Сумма пополнения";
+BuyPai.Total = "Итого";
+BuyPai.Comission = "Комиссия – 1%";
+BuyPai.ComissionWithoutPercentage = "Комиссия";
+BuyPai.ComissionDisclaimer.Unknown = "будет рассчитана после ввода номера карты";
+BuyPai.ComissionDisclaimer.Mtsbank = "не взимается при оплате картой МТС Банка";
+BuyPai.ComissionDisclaimer.Otherbank = "при оплате картой МТС Банка комиссия не будет взиматься";
+BuyPai.ComissionError = "Комиссия не может быть рассчитана";
+BuyPai.ComissionDescriptionError = "Произошла ошибка. Попробуйте произвести оплату позже или обратитесь в нашу поддержку";
+BuyPai.ComissionFeedbackError = "Написать нам";
+BuyPai.SaveCard = "Сохранить данные карты";
+BuyPai.Amount.Hint = "Введите сумму пополнения или укажите ее с\nпомощью ползунка. Чтобы перевести более\n%@ рублей, оплатите несколькими платежами\nили воспользуйтесь переводом по реквизитам.";
+BuyPai.Amount.LockedInputHint = "Чтобы перевести более %@ рублей, оплатите несколькими платежами\nили воспользуйтесь переводом по реквизитам.";
+BuyPai.Amount.Hint.Link = "реквизитам";
+BuyPai.DeleteCard.Title = "Удалить банковскую карту?";
+BuyPai.DeleteCard.Close = "Оставить";
+BuyPai.DeleteCard.Delete = "Удалить";
+BuyPai.Success.Title = "Оплата прошла успешно";
+BuyPai.Success.Text = "Паи будут выданы в течение нескольких рабочих дней";
+
+//MARK: - DU Refill
+DU.Refill.Title = "Пополнение";
+DU.Refill.Info = "Оформите договор доверительного управления.\nЗатем переведите средства банковской картой или по указанным реквизитам.\n\nАктивы будут приобретены в течение нескольких рабочих дней.";
+DU.Refill.Success.Text = "Активы будут приобретены в течение нескольких рабочих дней";
+DU.Refill.Hint.WithDays = "Чтобы ДУ стало активным, необходимо пополнить счёт на\n%@ в течение %@ дней с момента подписания договора.";
+DU.Refill.Hint.WithDate = "Чтобы ДУ стало активным, необходимо пополнить счёт на\n%@ до %@.";
+
+//MARK: - MTS Broker
+MTSBroker.Title = "МТС Банк";
+MTSBroker.BrokerAccountTitle = "Брокерский счёт МТС Банк";
+MTSBroker.Portfolio.Hint = "Услуга Брокерский счёт реализуется путем открытия счёта в ПАО «МТС Банк», который является партнером ПАО МТС по предоставлению брокерских услуг.";
+MTSBroker.InterruptedOpening.Title = "Продолжить\nоткрытие счёта?";
+MTSBroker.InterruptedOpening.Message = "Вы уже начали процесс открытия, но\nпрервали его.";
+MTSBroker.SigningFileWithdrawalTitle = "Распоряжение на вывод ДС";
+MTSBroker.OpeningInProgress.Title = "Счёт в процессе открытия";
+MTSBroker.OpeningInProgress.Details = "Вы уже можете зачислить денежные средства по реквизитам, пополнение с карты будет доступно после открытия счёта.";
+
+//MARK: - Blocked portfolio
+Portfolio.Blocked.Title = "Счёт не открыт";
+Portfolio.Blocked.Message = "Открытие счёта невозможно, обратитесь за консультацией по телефону : 8 (800) 250-05-20";
+
+//MARK: - MTSBroker instrument
+MTSOperationDetails.Info.Description.Selling = "При нажатии кнопки «Продать» на биржу будет выставлено поручение на продажу выбранного количества ценных бумаг по цене не ниже указанной на экране. Продажа будет произведена по наилучшей цене, но не ниже указанной в поручении. Если на бирже недостаточный спрос на выбранные ценные бумаги, поручение может быть исполнено частично или не исполнено совсем. Средства от продажи бумаг будут зачислены на ваш брокерский счёт ПАО «МТС Банк» в сроки в соответствии с режимом торгов ММВБ.";
+MTSOperationDetails.Info.Description.Buying = "При нажатии кнопки «Купить» на биржу будет выставлено поручение на покупку выбранного количества ценных бумаг по цене не выше указанной на экране. Покупка будет произведена по наилучшей цене, но не выше указанной в поручении. Если на бирже недостаточное предложение выбранных ценных бумаг, поручение может быть исполнено частично или не исполнено совсем. Бумаги будут зачислены на ваш депозитарный счёт ПАО «МТС Банк» в сроки в соответствии с режимом торгов ММВБ.";
+MTSOperationDetails.Info.InfoText = "Услуги предоставляет ПАО «МТС-Банк». Лицензия профессионального участника рынка ценных бумаг № 177-04613-100000 от 24.01.2001г. на осуществление брокерской деятельности, лицензия профессионального участника рынка ценных бумаг на осуществление депозитарной деятельности № 177-04660-000100 от 24.01.2001г.";
+
+//MARK: - Check email
+CheckEmail.Title = "Смена пароля";
+
+//MARK: - Standart strategy terms
+StandartStrategy.Terms.Title = "Условия";
+StandartStrategy.IIS.Title = "Получите налоговый вычет 13%, оформив ИИС";
+StandartStrategy.IIS.Description = "ИИС позволяет получить вычет 13% от суммы инвестирования за год. Максимальная сумма к возврату составялет 52 000 рублей в год. Для этого необходимо продержать вложенные деньги хотя бы три года. У вас может быть отрыт только один ИИС.";
+StandartStrategy.UserPortfolio = "В моих активах";
+StandartStrategy.Dynamic.Hint = "Расчет доходности включает данные по стратегии до момента ее признания стандартной";
+
+//MARK: - DU Money Flow
+Du.MoneyFlow.Pending = "В обработке";
+Du.MoneyFlow.Refund = "Возврат средств";
+Du.MoneyFlow.Confirmed.Title = "Средства поступили на счёт";
+Du.MoneyFlow.Confirmed.Subtitle = "Приобретённые активы вы сможете отслеживать в вашей стратегии";
+Du.MoneyFlow.Refund.Info = "Ваши личные данные не прошли проверку, возможно в них допущена ошибка. Поэтому средства отправлены вам обратно.";
+
+//MARK: - Empty State
+Empty.NoData.Title = "Данных пока нет";
+Empty.NoData.Text = "Они скоро появятся, мы уже работаем над этим";
+//MARK: - Instrument maturity
+Instrument.Maturity.Before = "до";
+Instument.Maturity = "Бумага погашена";
+
+//MARK: - Date periods
+DatePeriod.OneMonth.formattedText = "1 месяц";
+DatePeriod.ThreeMonth.formattedText = "3 месяца";
+DatePeriod.SixMonth.formattedText = "6 месяцев";
+DatePeriod.OneYear.formatterText = "1 год";
+DatePeriod.ThreeYear.formattedText = "3 года";
+DatePeriod.FiveYears.formattedText = "5 лет";
+DatePeriod.AllTime.formattedText = "всё время";
+
+DatePeriod.OneMonth.title = "1м";
+DatePeriod.ThreeMonth.title = "3м";
+DatePeriod.SixMonth.title = "6м";
+DatePeriod.OneYear.title = "1г";
+DatePeriod.ThreeYear.title = "3г";
+DatePeriod.FiveYears.title = "5л";
+DatePeriod.AllTime.title = "все";
+
+//MARK: - Shared
+Shared.DUAndPifWithdrawalTitle = "Возврат средств";

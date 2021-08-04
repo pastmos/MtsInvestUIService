@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MtsInvestGrpcService
 
 final class StocksViewController: AnimatableViewController {
     // MARK: Constants
@@ -196,7 +197,7 @@ extension StocksViewController: StocksPresenterOutput {
     func reload() {
         tableView.reloadData()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            self.tableView.scrollToTop()
+            self.tableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
         }
         }
         
@@ -234,7 +235,7 @@ extension StocksViewController: StocksPresenterOutput {
         return tabsView
     }
     
-    func onRowSelect(for brief: InstrumentBrief, type: BrokerageInstrumentType) {
+    func onRowSelect(for brief: INVInstrumentBrief, type: BrokerageInstrumentType) {
         let event: EventType = type == .stock
             ? .showcase_open_stock_instrument
             : .showcase_open_bonds_instrument

@@ -1532,6 +1532,8 @@
 		FE9EF41A26B9F31E0006912E /* PopupController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE9EF41726B9F31E0006912E /* PopupController.xib */; };
 		FE9EF41C26B9F3700006912E /* UIButton+BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9EF41B26B9F3700006912E /* UIButton+BackgroundColor.swift */; };
 		FE9EF41E26B9F3D80006912E /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9EF41D26B9F3D70006912E /* AppError.swift */; };
+		FE9EF42026BA83250006912E /* AnalyticsEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9EF41F26BA83240006912E /* AnalyticsEnums.swift */; };
+		FE9EF42226BA836C0006912E /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9EF42126BA836C0006912E /* String+Extension.swift */; };
 		FEDBB11321502B86FDA8501347BF46A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F29A2184AA062ACDABE9322D97AF6C /* Foundation.framework */; };
 		FF06160D0B36B386AF66E7F72EBBAB0A /* TypeAssistedChannelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257B970BC91CE2D657F6EF5D724A9457 /* TypeAssistedChannelHandler.swift */; };
 		FF2068CBCECC006E4027D961B2363AD4 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = E03F41645DC12A3D04C7EAC16510ACCE /* internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -3749,6 +3751,8 @@
 		FE9EF41726B9F31E0006912E /* PopupController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupController.xib; sourceTree = "<group>"; };
 		FE9EF41B26B9F3700006912E /* UIButton+BackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+BackgroundColor.swift"; sourceTree = "<group>"; };
 		FE9EF41D26B9F3D70006912E /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		FE9EF41F26BA83240006912E /* AnalyticsEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsEnums.swift; sourceTree = "<group>"; };
+		FE9EF42126BA836C0006912E /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "../Others/String+Extension.swift"; sourceTree = "<group>"; };
 		FEC2AFEF2C02ABBE76F6FC0D2E42D6D1 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		FEC58CE2C73544FEC7076FB43A7121E6 /* sha1-armv8.linux.aarch64.S */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.asm; name = "sha1-armv8.linux.aarch64.S"; path = "Sources/CNIOBoringSSL/crypto/fipsmodule/sha1-armv8.linux.aarch64.S"; sourceTree = "<group>"; };
 		FEF9A0D1E9B4D1C0CB7A92D25A40D3F9 /* CNIOBoringSSL_objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNIOBoringSSL_objects.h; path = Sources/CNIOBoringSSL/include/CNIOBoringSSL_objects.h; sourceTree = "<group>"; };
@@ -5365,6 +5369,7 @@
 		7B497B58F7E2CC3D54D98B8D863444F4 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				FE9EF41F26BA83240006912E /* AnalyticsEnums.swift */,
 				FE9EF41D26B9F3D70006912E /* AppError.swift */,
 				FE9EF3FD26B9EC270006912E /* FeedPeriod.swift */,
 				FE9EF3FB26B9EB7F0006912E /* DuObject.swift */,
@@ -6272,6 +6277,7 @@
 		F207AC8869A502316ECF1FF542D16EC9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FE9EF42126BA836C0006912E /* String+Extension.swift */,
 				FE9EF41B26B9F3700006912E /* UIButton+BackgroundColor.swift */,
 				FE9EF41126B9F2870006912E /* UIView+Blur.swift */,
 				FE9EF41026B9F2870006912E /* UIView+Constraints.swift */,
@@ -8767,6 +8773,7 @@
 				BA507F78BBD0F436E1A26BCAEBC0D3B4 /* IRenewStreamsSupportable.swift in Sources */,
 				6CE752DDA9F336D774B57F53ADBB718A /* Models.swift in Sources */,
 				FE9EF40B26B9F1180006912E /* UIImage+Color.swift in Sources */,
+				FE9EF42026BA83250006912E /* AnalyticsEnums.swift in Sources */,
 				3A3FB5C6F6476B3DA047EC9BC35CC85A /* MtsInvestUIService-dummy.m in Sources */,
 				FE9EF3E426B9E4EC0006912E /* ClearNavigationController.swift in Sources */,
 				FE9EF41E26B9F3D80006912E /* AppError.swift in Sources */,
@@ -8805,6 +8812,7 @@
 				FC6C43B490421BAA46A3028376B250D1 /* StocksViewController.swift in Sources */,
 				FE9EF3FC26B9EB7F0006912E /* DuObject.swift in Sources */,
 				FE9EF3E826B9E6A70006912E /* KeyBoardListener.swift in Sources */,
+				FE9EF42226BA836C0006912E /* String+Extension.swift in Sources */,
 				FE9EF3CF26B9E2230006912E /* NSObject+Extension.swift in Sources */,
 				FE9EF3DD26B9E3E50006912E /* ApproveController.swift in Sources */,
 				037408AC782F08757A55EAA025E97CA7 /* String+Localized.swift in Sources */,
