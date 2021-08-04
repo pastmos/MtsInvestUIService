@@ -73,7 +73,6 @@ final class ApproveController: UIViewController {
     }
     
     @IBAction func toMyPortfolioButtonClicked() {
-        let storyBoard = R.storyboard.main.tabbarVC()!
-        UIApplication.shared.keyWindow?.rootViewController = storyBoard
+       
     }
 }

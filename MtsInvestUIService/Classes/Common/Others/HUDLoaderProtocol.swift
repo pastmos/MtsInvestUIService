@@ -38,7 +38,7 @@ extension HUDLoaderProtocol {
         }
     }
     
-    func showErrorAlert(withDescription description: String, title: String = R.string.localizable.errorTitle(), handler: ActionHandler? = nil) {
+    func showErrorAlert(withDescription description: String, title: String = Strings.errorTitle, handler: ActionHandler? = nil) {
         DispatchQueue.main.async { [weak self] in
             self?.showAlert(title: title,
                             message: description,
@@ -65,7 +65,7 @@ extension HUDLoaderProtocol {
     }
     
     func showFullScreenError() {
-        (self as? BaseViewController)?.present(R.storyboard.main.errorViewController()!, animated: true)
+        (self as? BaseViewController)?.present(Storyboards.Main.errorViewController.instantiate(), animated: true)
     }
 }
 

@@ -44,5 +44,6 @@ TODO: Add long description of the pod here.
   s.dependency 'MtsInvestGrpcService'
   s.dependency 'SkeletonView'
   s.dependency 'Material'
+  s.dependency 'SwiftGen'
   
 end

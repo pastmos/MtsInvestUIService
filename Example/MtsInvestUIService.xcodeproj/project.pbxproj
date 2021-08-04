@@ -13,6 +13,17 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		DD4E166DB487761EFD772B6F /* Pods_MtsInvestUIService_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C0D090A5AA722F7C05DA9F /* Pods_MtsInvestUIService_Example.framework */; };
+		FE86B57426BB0D7E00FA985E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE86B56826BB0D7E00FA985E /* Colors.xcassets */; };
+		FE86B57526BB0D7E00FA985E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE86B56926BB0D7E00FA985E /* Localizable.strings */; };
+		FE86B57626BB0D7E00FA985E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE86B56A26BB0D7E00FA985E /* Images.xcassets */; };
+		FE86B57726BB0D7E00FA985E /* CorpidE1SCd_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE86B56C26BB0D7E00FA985E /* CorpidE1SCd_Regular.ttf */; };
+		FE86B57826BB0D7E00FA985E /* MTSSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE86B56D26BB0D7E00FA985E /* MTSSans-Black.otf */; };
+		FE86B57926BB0D7E00FA985E /* MTSSans-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE86B56E26BB0D7E00FA985E /* MTSSans-Medium.otf */; };
+		FE86B57A26BB0D7E00FA985E /* CorpidE1SCd_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE86B56F26BB0D7E00FA985E /* CorpidE1SCd_Bold.ttf */; };
+		FE86B57B26BB0D7E00FA985E /* MTSSans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE86B57026BB0D7E00FA985E /* MTSSans-Bold.otf */; };
+		FE86B57C26BB0D7E00FA985E /* CorpidE1SCd_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE86B57126BB0D7E00FA985E /* CorpidE1SCd_Light.ttf */; };
+		FE86B57D26BB0D7E00FA985E /* MTSSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE86B57226BB0D7E00FA985E /* MTSSans-Regular.otf */; };
+		FE86B57E26BB0D7E00FA985E /* MTSSans-UltraWide.otf in Resources */ = {isa = PBXBuildFile; fileRef = FE86B57326BB0D7E00FA985E /* MTSSans-UltraWide.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +39,17 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AACC9C716923CA8D1919CF3A /* Pods-MtsInvestUIService_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MtsInvestUIService_Example.release.xcconfig"; path = "Target Support Files/Pods-MtsInvestUIService_Example/Pods-MtsInvestUIService_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EFC65DCF5A4C075ED1508A36 /* MtsInvestUIService.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MtsInvestUIService.podspec; path = ../MtsInvestUIService.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FE86B56826BB0D7E00FA985E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		FE86B56926BB0D7E00FA985E /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		FE86B56A26BB0D7E00FA985E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FE86B56C26BB0D7E00FA985E /* CorpidE1SCd_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CorpidE1SCd_Regular.ttf; sourceTree = "<group>"; };
+		FE86B56D26BB0D7E00FA985E /* MTSSans-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MTSSans-Black.otf"; sourceTree = "<group>"; };
+		FE86B56E26BB0D7E00FA985E /* MTSSans-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MTSSans-Medium.otf"; sourceTree = "<group>"; };
+		FE86B56F26BB0D7E00FA985E /* CorpidE1SCd_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CorpidE1SCd_Bold.ttf; sourceTree = "<group>"; };
+		FE86B57026BB0D7E00FA985E /* MTSSans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MTSSans-Bold.otf"; sourceTree = "<group>"; };
+		FE86B57126BB0D7E00FA985E /* CorpidE1SCd_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CorpidE1SCd_Light.ttf; sourceTree = "<group>"; };
+		FE86B57226BB0D7E00FA985E /* MTSSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MTSSans-Regular.otf"; sourceTree = "<group>"; };
+		FE86B57326BB0D7E00FA985E /* MTSSans-UltraWide.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MTSSans-UltraWide.otf"; sourceTree = "<group>"; };
 		FEDBE5729EEC2A266E28B98F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for MtsInvestUIService */,
+				607FACD21AFB9204008FA782 /* Example */,
+				FE86B56726BB0D7E00FA985E /* Assets */,
 				607FACD11AFB9204008FA782 /* Products */,
 				CC14C403BA7A31294B9DC756 /* Pods */,
 				59D27A81486316CEFAA1EECD /* Frameworks */,
@@ -70,7 +93,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for MtsInvestUIService */ = {
+		607FACD21AFB9204008FA782 /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -80,7 +103,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for MtsInvestUIService";
+			name = Example;
 			path = MtsInvestUIService;
 			sourceTree = "<group>";
 		};
@@ -111,6 +134,32 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		FE86B56726BB0D7E00FA985E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FE86B56826BB0D7E00FA985E /* Colors.xcassets */,
+				FE86B56A26BB0D7E00FA985E /* Images.xcassets */,
+				FE86B56926BB0D7E00FA985E /* Localizable.strings */,
+				FE86B56B26BB0D7E00FA985E /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FE86B56B26BB0D7E00FA985E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FE86B56C26BB0D7E00FA985E /* CorpidE1SCd_Regular.ttf */,
+				FE86B56D26BB0D7E00FA985E /* MTSSans-Black.otf */,
+				FE86B56E26BB0D7E00FA985E /* MTSSans-Medium.otf */,
+				FE86B56F26BB0D7E00FA985E /* CorpidE1SCd_Bold.ttf */,
+				FE86B57026BB0D7E00FA985E /* MTSSans-Bold.otf */,
+				FE86B57126BB0D7E00FA985E /* CorpidE1SCd_Light.ttf */,
+				FE86B57226BB0D7E00FA985E /* MTSSans-Regular.otf */,
+				FE86B57326BB0D7E00FA985E /* MTSSans-UltraWide.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,6 +167,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "MtsInvestUIService_Example" */;
 			buildPhases = (
+				FE9EF42926BA8C650006912E /* SwiftGen */,
 				3C96B11EC01DFD09B636E605 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
@@ -173,8 +223,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE86B57B26BB0D7E00FA985E /* MTSSans-Bold.otf in Resources */,
+				FE86B57526BB0D7E00FA985E /* Localizable.strings in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				FE86B57426BB0D7E00FA985E /* Colors.xcassets in Resources */,
+				FE86B57826BB0D7E00FA985E /* MTSSans-Black.otf in Resources */,
+				FE86B57E26BB0D7E00FA985E /* MTSSans-UltraWide.otf in Resources */,
+				FE86B57926BB0D7E00FA985E /* MTSSans-Medium.otf in Resources */,
+				FE86B57726BB0D7E00FA985E /* CorpidE1SCd_Regular.ttf in Resources */,
+				FE86B57626BB0D7E00FA985E /* Images.xcassets in Resources */,
+				FE86B57A26BB0D7E00FA985E /* CorpidE1SCd_Bold.ttf in Resources */,
+				FE86B57C26BB0D7E00FA985E /* CorpidE1SCd_Light.ttf in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				FE86B57D26BB0D7E00FA985E /* MTSSans-Regular.otf in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +338,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MtsInvestUIService_Example/Pods-MtsInvestUIService_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		FE9EF42926BA8C650006912E /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"SwiftGen generation\"\n\"$PODS_ROOT/SwiftGen/bin/swiftgen\" config run --config \"$SRCROOT/swiftgen.yml\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -16,15 +16,15 @@ protocol BaseTextFieldSetupProtocol {
 
 extension BaseTextFieldSetupProtocol {
     func setupTextField(_ textField: ErrorTextField) {
-        textField.font = .mtsSansRegular(size: 17.0)
+        textField.font = FontFamily.MTSSans.regular.font(size: 17)
         textField.textColor = .mtsDeepBlue
         
-        textField.placeholderLabel.font = .mtsSansRegular(size: 17.0)
+        textField.placeholderLabel.font = FontFamily.MTSSans.regular.font(size: 17)
         textField.placeholderLabel.textColor = .mtsGreyChateau
         textField.placeholderActiveColor = .mtsBattleshipGrey
         textField.placeholderVerticalOffset = 16.0
         
-        textField.errorLabel.font = .mtsSansRegular(size: 14)
+        textField.errorLabel.font = FontFamily.MTSSans.regular.font(size: 17)
         textField.errorLabel.textColor = .mtsRedishOrange
         textField.error = "Error.FieldIsEmpty".localized
         textField.errorVerticalOffset = 2.0
@@ -115,15 +115,15 @@ class BaseViewController: UIViewController, PopupMessagesProtocol, BaseTextField
     
     /// Material text field initial settings
     func setupTextField(_ textField: ErrorTextField) {
-        textField.font = .mtsSansRegular(size: 17.0)
+        textField.font = FontFamily.MTSSans.regular.font(size: 17)
         textField.textColor = .mtsDeepBlue
         
-        textField.placeholderLabel.font = .mtsSansRegular(size: 17.0)
+        textField.placeholderLabel.font = FontFamily.MTSSans.regular.font(size: 17)
         textField.placeholderLabel.textColor = .mtsGreyChateau
         textField.placeholderActiveColor = .mtsBattleshipGrey
         textField.placeholderVerticalOffset = 16.0
         
-        textField.errorLabel.font = .mtsSansRegular(size: 14)
+        textField.errorLabel.font = FontFamily.MTSSans.regular.font(size: 17)
         textField.errorLabel.textColor = .mtsRedishOrange
         textField.error = "Error.FieldIsEmpty".localized
         textField.errorVerticalOffset = 7.0
@@ -175,14 +175,14 @@ class BaseViewController: UIViewController, PopupMessagesProtocol, BaseTextField
         let backButton = UIBarButtonItem(title: title, style: .plain, target: nil, action: customAction)
         
         if #available(iOS 13.0, *) {
-            navigationController?.navigationBar.standardAppearance.setBackIndicatorImage( R.image.icon_back(), transitionMaskImage: R.image.icon_back())
+            navigationController?.navigationBar.standardAppearance.setBackIndicatorImage( Assets.Images.iconBack.image, transitionMaskImage: Assets.Images.iconBack.image)
         } else {
-            navigationController?.navigationBar.backIndicatorImage = R.image.icon_back()
-            navigationController?.navigationBar.backIndicatorTransitionMaskImage = R.image.icon_back()
+            navigationController?.navigationBar.backIndicatorImage = Assets.Images.iconBack.image
+            navigationController?.navigationBar.backIndicatorTransitionMaskImage = Assets.Images.iconBack.image
         }
         
-        backButton.setTitleTextAttributes([.font: UIFont.mtsSansBold(size: size), .foregroundColor: color], for: .normal)
-        backButton.setTitleTextAttributes([.font: UIFont.mtsSansBold(size: size), .foregroundColor: color], for: .selected)
+        backButton.setTitleTextAttributes([.font: FontFamily.MTSSans.bold.font(size: size), .foregroundColor: color], for: .normal)
+        backButton.setTitleTextAttributes([.font: FontFamily.MTSSans.bold.font(size: size), .foregroundColor: color], for: .selected)
         
         navigationItem.backBarButtonItem = backButton
         backButton.accessibilityIdentifier = "backButton"
@@ -199,8 +199,8 @@ class BaseViewController: UIViewController, PopupMessagesProtocol, BaseTextField
                                            style: .plain,
                                            target: self,
                                            action: #selector(dismissVC))
-        cancelButton.setTitleTextAttributes([.font: UIFont.mtsSansBold(size: 14.0), .foregroundColor: UIColor.mtsDeepBlue], for: .normal)
-        cancelButton.setTitleTextAttributes([.font: UIFont.mtsSansBold(size: 14.0), .foregroundColor: UIColor.mtsDeepBlue], for: .selected)
+        cancelButton.setTitleTextAttributes([.font: FontFamily.MTSSans.bold.font(size: 14), .foregroundColor: UIColor.mtsDeepBlue], for: .normal)
+        cancelButton.setTitleTextAttributes([.font: FontFamily.MTSSans.bold.font(size: 14), .foregroundColor: UIColor.mtsDeepBlue], for: .selected)
         navigationItem.leftBarButtonItem = cancelButton
     }
     

@@ -1,0 +1,32 @@
+output_dir: MtsInvestUIService/Assets
+
+strings:
+  inputs: Example/Assets/Localizable.strings
+  outputs:
+    templateName: structured-swift5
+    output: strings.swift
+    params:
+      enumName: Strings
+
+xcassets:
+  inputs: ['Example/Assets/Images.xcassets',
+  'Example/Assets/Colors.xcassets']
+  outputs:
+    templateName: swift5
+    output: assets.swift
+    params:
+      enumName: Assets
+
+fonts:
+  inputs: Example/Assets
+  outputs:
+      templateName: swift5
+      output: fonts.swift
+
+ib:
+  inputs: MtsInvestUIService/Classes/Common/UI/Storyboards
+  outputs:
+    templateName: scenes-swift5
+    output: storyboards.swift
+    params:
+      enumName: Storyboards

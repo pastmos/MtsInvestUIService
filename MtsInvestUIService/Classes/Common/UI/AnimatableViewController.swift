@@ -68,7 +68,7 @@ class AnimatableViewController: BaseViewController, UIGestureRecognizerDelegate 
     private func addCloseButtonIfNeeded() {
         guard navigationController?.viewControllers.count == 1 else { return }
         
-        let closeButton = UIBarButtonItem(image: R.image.ic_feed_close_card(),
+        let closeButton = UIBarButtonItem(image: Assets.Images.icFeedCloseCard.image,
                                             style: .plain,
                                             target: self,
                                             action: #selector(handleCloseButton))

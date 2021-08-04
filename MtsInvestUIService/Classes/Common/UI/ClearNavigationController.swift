@@ -29,7 +29,8 @@ open class ClearNavigationController: UINavigationController {
         definesPresentationContext = true
         modalPresentationCapturesStatusBarAppearance = true
         
-        navigationBar.titleTextAttributes = [.font: UIFont.mtsSansMedium(size: 17.0), .foregroundColor: UIColor.mtsDeepBlue]
+        navigationBar.titleTextAttributes = [.font: FontFamily.MTSSans.medium.font(size: 17)
+, .foregroundColor: UIColor.mtsDeepBlue]
         navigationBar.backIndicatorImage?.accessibilityIdentifier = "backButton"
         
     }
@@ -59,12 +60,12 @@ open class ClearNavigationController: UINavigationController {
             type: .threeButtonsPicture,
             output: self,
             viewData: SelectActionModalViewData(
-                title: R.string.localizable.newClientDiscardChangeTitle(),
+                title: Strings.NewClient.discardChangeTitle,
                 description: "",
-                image: R.image.attentionCircleOrangeIcon(),
-                actionButtonTitle: R.string.localizable.cancel(),
+                image: Assets.Images.attentionCircleOrangeIcon.image,
+                actionButtonTitle: Strings.cancel,
                 closeButtonTitle: "",
-                customActionButtonTitle: R.string.localizable.feedbackResultOk()),
+                customActionButtonTitle:Strings.Feedback.resultOk),
             isClosable: true)
         self.topViewController?.present(alertContoller,
                                         animated: true)

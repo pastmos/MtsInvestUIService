@@ -5,6 +5,7 @@ platform :ios, '11.0'
 target 'MtsInvestUIService_Example' do
   
   pod 'SnapKit'
+  pod 'SwiftGen'
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'SkeletonView'

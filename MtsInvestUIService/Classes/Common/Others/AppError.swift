@@ -76,9 +76,9 @@ enum AppError: Error, CustomStringConvertible {
         case .serialization:
             return "Что-то пошло не так. Попробуйте еще раз."
         case .networkError:
-            return R.string.localizable.errorNoNetwork()
+            return Strings.Error.noNetwork
         case .unknownError:
-            return R.string.localizable.unknownErrorMessage()
+            return Strings.UnknownError.message
         case .smsError,
              .retriesData:
             return "Ошибка СМС кода"
