@@ -44,30 +44,30 @@ extension BrokerageInstrumentType {
     var title: String {
         switch self {
         case .stock:
-            return R.string.localizable.stocksTitle()
+            return Strings.Stocks.title
         case .obligation:
-            return R.string.localizable.obligationsTitle()
+            return Strings.Obligations.title
         case .bpif:
-            return R.string.localizable.brokerageBPIFTitle()
+            return Strings.Brokerage.Bpif.title
 		case .foreignStock:
-			return R.string.localizable.feedForeignStocksTitle()
+            return Strings.Feed.foreignStocksTitle
 		case .foreignObligation:
-			return R.string.localizable.feedForeignBondsTitle()
+			return Strings.Feed.foreignBondsTitle
         default:
-            return R.string.localizable.othersTitle()
+            return Strings.Others.title
         }
     }
     
     var commonTitle: String {
         switch self {
         case .stock, .foreignStock:
-            return R.string.localizable.stocksTitle()
+            return Strings.Stocks.title
         case .obligation, .foreignObligation:
-            return R.string.localizable.obligationsTitle()
+            return Strings.Obligations.title
         case .bpif:
-            return R.string.localizable.brokerageBPIFTitle()
+            return Strings.Brokerage.Bpif.title
         default:
-            return R.string.localizable.othersTitle()
+            return Strings.Others.title
         }
     }
     

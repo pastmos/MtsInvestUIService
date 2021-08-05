@@ -44,7 +44,7 @@ final class StocksViewController: AnimatableViewController {
     private var search: UISearchController?
     
     override var screenName: String? {
-        return R.string.localizable.analyticsStocksViewControllerScreenName()
+        return Strings.Analytics.StocksViewController.screenName
     }
     
     // MARK: Lifecycle
@@ -109,8 +109,8 @@ final class StocksViewController: AnimatableViewController {
     }
     
     private func configureTableView() {
-        tableView.register(R.nib.feedShareCell)
-        tableView.register(R.nib.stocksCollectionCell)
+        tableView.registerCell(FeedShareCell.self)
+        tableView.registerCell(StocksCollectionCell.self)
         tableView.sectionHeaderHeight = UITableViewAutomaticDimension
         tableView.estimatedSectionHeaderHeight = Constants.estimatedHeaderHeight
         
@@ -118,11 +118,13 @@ final class StocksViewController: AnimatableViewController {
     }
     
     private func configureSegmentedScroll() {
-        let titles = [R.string.localizable.brokerageBPIFTitle(), R.string.localizable.stocksTitle(), R.string.localizable.obligationsTitle()]
-        let appearance: PageSegmentedControllerAppearance.HeaderAppearance = .init(segmentTitleFont: R.font.mtsSansMedium(size: 17)!,
-                                                                                   segmentSelectedColor: R.color.textHeadline()!,
-                                                                                   segmentUnselectedColor: R.color.textTertiary()!,
-                                                                                   underlineColor: R.color.controlsPrimaryActive()!)
+        let titles = [Strings.Brokerage.Bpif.title,
+                      Strings.Stocks.title,
+                      Strings.Obligations.title]
+        let appearance: PageSegmentedControllerAppearance.HeaderAppearance = .init(segmentTitleFont: FontFamily.MTSSans.medium.font(size: 17),
+                                                                                   segmentSelectedColor: Assets.Colors.textHeadline.color,
+                                                                                   segmentUnselectedColor: Assets.Colors.textTertiary.color,
+                                                                                   underlineColor: Assets.Colors.controlsPrimaryActive.color)
         segmentedScroll.configureFor(items: titles,
                                      font: appearance.segmentTitleFont,
                                      selectedColor: appearance.segmentSelectedColor,
@@ -137,7 +139,8 @@ final class StocksViewController: AnimatableViewController {
                                         y: .zero,
                                         width: UIScreen.main.bounds.width,
                                         height: Constants.tabsHeight))
-        tabsView.backgroundColor = R.color.backgroundPrimary()
+        tabsView.backgroundColor = Assets.Colors.backgroundPrimary.color
+
         tabsView.addSubview(segmentedScroll)
         
         segmentedScroll.snp.makeConstraints { make in
@@ -182,7 +185,7 @@ extension StocksViewController: StocksPresenterOutput {
     
     func searchWillDisappear(_ type: String) {
         guard #available(iOS 11.0, *) else {
-            let searchButton = UIBarButtonItem(image: R.image.icSearch(),
+            let searchButton = UIBarButtonItem(image: Assets.Images.icSearch.image,
                                                style: .done,
                                                target: self,
                                                action: #selector(selectSearch))
@@ -223,7 +226,7 @@ extension StocksViewController: StocksPresenterOutput {
     }
     
     func updatePeriodTitle(period: FeedPeriod) {
-        let periodText = R.string.localizable.feedPeriodPrefix() + period.formattedText.lowercased()
+        let periodText = Strings.Feed.periodPrefix + period.formattedText.lowercased()
         periodButton.setTitle(periodText, for: .normal)
     }
     

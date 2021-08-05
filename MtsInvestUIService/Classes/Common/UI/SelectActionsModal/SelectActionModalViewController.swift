@@ -70,7 +70,7 @@ class SelectActionModalViewController: UIViewController, SelectActionModalViewCo
         self.view.constraintToBounds(view: blurView)
         
         
-        darkView.backgroundColor = R.color.backgroundOverlay()
+        darkView.backgroundColor = Assets.Colors.backgroundOverlay.color
         view.addSubview(darkView)
         darkView.translatesAutoresizingMaskIntoConstraints = false
         self.view.constraintToBounds(view: darkView)

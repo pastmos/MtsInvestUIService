@@ -19,9 +19,9 @@ enum StocksSorting: CaseIterable {
     var title: String {
         switch self {
             case .none: return ""
-            case .alphabet: return R.string.localizable.stocksSortAlphabet()
-            case .price: return R.string.localizable.stocksSortPrice()
-            case .yield: return R.string.localizable.stocksSortYield()
+        case .alphabet: return Strings.Stocks.Sort.alphabet
+            case .price: return Strings.Stocks.Sort.price
+            case .yield: return Strings.Stocks.Sort.yield
         }
     }
 }

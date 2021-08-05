@@ -27,7 +27,7 @@ final class PopupButtonModel {
 
 extension PopupButtonModel {
     static var closeButton: PopupButtonModel {
-        return PopupButtonModel(title: R.string.localizable.close(),
+        return PopupButtonModel(title: Strings.close,
                                 titleColor: .white,
                                 buttonColor: .mtsRed,
                                 handler: nil)

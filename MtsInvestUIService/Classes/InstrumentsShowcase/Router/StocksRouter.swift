@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import MtsInvestGrpcService
 
 protocol StocksRouterInterface {
     func presentSorting(activeOption: StocksSorting,
                         activeOptionDescending: Bool,
                         handler: @escaping (StocksSorting, Bool) -> Void)
     func presentPeriod(active: FeedPeriod, handler: @escaping (FeedPeriod) -> Void)
-    func openStocksInstrument(for brief: InstrumentBrief, type: BrokerageInstrumentType, portfolioType: BrokeragePortfolioType)
+    func openStocksInstrument(for brief: INVInstrumentBrief, type: BrokerageInstrumentType, portfolioType: BrokeragePortfolioType)
 }
 
 class StocksRouter: StocksRouterInterface {
@@ -48,7 +49,7 @@ class StocksRouter: StocksRouterInterface {
         viewController.present(controller, animated: true)
     }
 
-    func openStocksInstrument(for brief: InstrumentBrief, type: BrokerageInstrumentType, portfolioType: BrokeragePortfolioType) {
+    func openStocksInstrument(for brief: INVInstrumentBrief, type: BrokerageInstrumentType, portfolioType: BrokeragePortfolioType) {
         guard let navigation = viewController.navigationController else { return }
         let coordinator = InstrumentCoordinator(instrumentID: brief.instrumentID,
                                                 type: type,

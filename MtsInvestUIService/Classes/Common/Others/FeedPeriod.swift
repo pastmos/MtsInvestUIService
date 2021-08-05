@@ -39,19 +39,19 @@ enum FeedPeriod: Int, CaseIterable {
     var brokerageYieldButtonText: String {
         switch self {
         case .oneDay:
-            return R.string.localizable.brokerageYieldPeriodOneDay()
+            return Strings.Brokerage.YieldPeriod.oneDay
         case .oneWeek:
-            return R.string.localizable.brokerageYieldPeriodOneWeek()
+            return Strings.Brokerage.YieldPeriod.oneWeek
         case .oneMonth:
-            return R.string.localizable.brokerageYieldPeriodOneMonth()
+            return Strings.Brokerage.YieldPeriod.oneMonth
         case .threeMonth:
-            return R.string.localizable.brokerageYieldPeriodThreeMonths()
+            return Strings.Brokerage.YieldPeriod.threeMonths
         case .oneYear:
-            return R.string.localizable.brokerageYieldPeriodOneYear()
+            return Strings.Brokerage.YieldPeriod.oneYear
         case .threeYear:
-            return R.string.localizable.brokerageYieldPeriodThreeYears()
+            return Strings.Brokerage.YieldPeriod.threeYears
         case .allTime:
-            return R.string.localizable.brokerageYieldPeriodAllTime()
+            return Strings.Brokerage.YieldPeriod.allTime
         }
     }
 }

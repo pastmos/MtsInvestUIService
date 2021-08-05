@@ -21,15 +21,15 @@ enum FundsEnum: String {
     var name: String {
         switch self {
         case .rubleBonds:
-            return R.string.localizable.fundNameSM()
+            return Strings.fundNameSM
         case .rubleStocks:
-            return R.string.localizable.fundNameFA()
+            return Strings.fundNameFA
         case .dollarBio:
-            return R.string.localizable.fundNameBT()
+            return Strings.fundNameBT
         case .dollarBonds:
-            return R.string.localizable.fundNameMV()
+            return Strings.fundNameMV
         case .dollarStocks:
-            return R.string.localizable.fundNameAM()
+            return Strings.fundNameAM
         default:
             return ""
         }
@@ -38,21 +38,21 @@ enum FundsEnum: String {
     var image: UIImage {
         switch self {
         case .rubleBonds:
-            return R.image.icon_ruble_bonds()!
+            return Assets.Images.iconRubleBonds.image
         case .rubleStocks:
-            return R.image.icon_ruble_stocks()!
+            return Assets.Images.iconRubleStocks.image
         case .dollarBio:
-            return R.image.icon_dollar_bio()!
+            return Assets.Images.iconDollarBio.image
         case .dollarBonds:
-            return R.image.icon_dollar_bonds()!
+            return Assets.Images.iconDollarBonds.image
         case .dollarStocks:
-            return R.image.icon_dollar_stocks()!
+            return Assets.Images.iconDollarStocks.image
         case .trustManagement:
-            return R.image.icon_trustManagement()!
+            return Assets.Images.iconTrustManagement.image
         case .rubleReserved:
-            return R.image.icon_ruble_reserve()!
+            return Assets.Images.iconRubleReserve.image
         case .dollarReserved:
-            return R.image.icon_dollar_reserve()!
+            return Assets.Images.iconDollarReserve.image
         }
     }
     
@@ -139,19 +139,19 @@ enum FundPeriod {
     var rawValue: String {
         switch self {
         case .month1:
-            return R.string.localizable.datePeriodOneMonthFormattedText()
+            return Strings.DatePeriod.OneMonth.formattedText
         case .month3:
-            return R.string.localizable.datePeriodThreeMonthFormattedText()
+            return Strings.DatePeriod.ThreeMonth.formattedText
         case .month6:
-            return R.string.localizable.datePeriodSixMonthFormattedText()
+            return Strings.DatePeriod.SixMonth.formattedText
         case .year1:
-            return R.string.localizable.datePeriodOneYearFormatterText()
+            return Strings.DatePeriod.OneYear.formatterText
         case .year3:
-            return R.string.localizable.datePeriodThreeYearFormattedText()
+            return Strings.DatePeriod.ThreeYear.formattedText
         case .year5:
-            return R.string.localizable.datePeriodFiveYearsFormattedText()
+            return Strings.DatePeriod.FiveYears.formattedText
         case .all:
-            return R.string.localizable.datePeriodAllTimeFormattedText()
+            return Strings.DatePeriod.AllTime.formattedText
         }
     }
     
@@ -314,38 +314,38 @@ enum DateEnum: String, CaseIterable {
     var formattedText: String {
         switch self {
         case .oneMonth:
-            return R.string.localizable.datePeriodOneMonthFormattedText()
+            return Strings.DatePeriod.OneMonth.formattedText
         case .threeMonth:
-            return R.string.localizable.datePeriodThreeMonthFormattedText()
+            return Strings.DatePeriod.ThreeMonth.formattedText
         case .sixMonth:
-            return R.string.localizable.datePeriodSixMonthFormattedText()
+            return Strings.DatePeriod.SixMonth.formattedText
         case .oneYear:
-            return R.string.localizable.datePeriodOneYearFormatterText()
+            return Strings.DatePeriod.OneYear.formatterText
         case .threeYear:
-            return R.string.localizable.datePeriodThreeYearFormattedText()
+            return Strings.DatePeriod.ThreeYear.formattedText
         case .fiveYears:
-            return R.string.localizable.datePeriodFiveYearsFormattedText()
+            return Strings.DatePeriod.FiveYears.formattedText
         case .allTime:
-            return R.string.localizable.datePeriodAllTimeFormattedText()
+            return Strings.DatePeriod.AllTime.formattedText
         }
     }
-    
+   
     var title: String {
         switch self {
         case .allTime:
-            return R.string.localizable.datePeriodAllTimeTitle()
+            return Strings.DatePeriod.AllTime.title
         case .oneMonth:
-            return R.string.localizable.datePeriodOneMonthTitle()
+            return Strings.DatePeriod.OneMonth.title
         case .oneYear:
-            return R.string.localizable.datePeriodOneYearTitle()
+            return Strings.DatePeriod.OneYear.title
         case .threeMonth:
-            return R.string.localizable.datePeriodThreeMonthTitle()
+            return Strings.DatePeriod.ThreeMonth.title
         case .threeYear:
-            return R.string.localizable.datePeriodThreeYearTitle()
+            return Strings.DatePeriod.ThreeYear.title
         case .fiveYears:
-            return R.string.localizable.datePeriodFiveYearsTitle()
+            return Strings.DatePeriod.FiveYears.title
         case .sixMonth:
-            return R.string.localizable.datePeriodSixMonthTitle()
+            return Strings.DatePeriod.SixMonth.title
         }
     }
     

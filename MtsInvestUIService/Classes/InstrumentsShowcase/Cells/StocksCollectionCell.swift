@@ -17,7 +17,7 @@ final class StocksCollectionCell: UITableViewCell {
     //MARK: Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        collectionView.register(R.nib.stocksCollectionItemCell)
+        collectionView.registerCell(StocksCollectionItemCell.self)
     }
 }
 

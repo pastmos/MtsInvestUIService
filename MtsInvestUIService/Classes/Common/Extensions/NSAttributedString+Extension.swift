@@ -17,8 +17,8 @@ extension NSAttributedString {
     class func attributedValue(for value: Double?,
                                integerColor: UIColor = .mtsDeepBlue,
                                fractionalColor: UIColor = .mtsBattleshipGrey,
-                               integerFont: UIFont = .mtsSansMedium(size: 17),
-                               fractionalFont: UIFont = .mtsSansRegular(size: 17),
+                               integerFont: UIFont = FontFamily.MTSSans.medium.font(size: 17),
+                               fractionalFont: UIFont = FontFamily.MTSSans.regular.font(size: 17),
                                minimumKeepingFractionDigits: Int? = nil,
                                maximumFractionDigits: Int? = nil,
                                appendPlusSign: Bool = false) -> NSAttributedString? {
@@ -70,8 +70,8 @@ extension NSAttributedString {
                                integerColor: UIColor = .mtsDeepBlue,
                                fractionalColor: UIColor = .mtsBattleshipGrey,
                                currencyColor: UIColor = .mtsDeepBlue,
-                               integerFont: UIFont = .mtsSansMedium(size: 17),
-                               fractionalFont: UIFont = .mtsSansRegular(size: 17),
+                               integerFont: UIFont = FontFamily.MTSSans.medium.font(size: 17),
+                               fractionalFont: UIFont = FontFamily.MTSSans.regular.font(size: 17),
                                minimumKeepingFractionDigits: Int? = nil,
 							   maximumFractionDigits: Int? = nil,
                                appendPlusSign: Bool = false) -> NSAttributedString? {
@@ -127,10 +127,10 @@ extension NSAttributedString {
         var sign = "+"
         if growthAbs > 0 {
             color = .mtsAlgaeGreen
-            image = R.image.icArrowUp()
+            image = Assets.Images.icArrowUp.image
         } else if growthAbs < 0 {
             color = .mtsRed
-            image = R.image.icArrowDown()
+            image = Assets.Images.icArrowDown.image
             stringValue.removeFirst()
             sign = "-"
         }
@@ -151,7 +151,7 @@ extension NSAttributedString {
         }
         
         let periodTextProfit = NSAttributedString(string: period,
-                                                  attributes: [.font: UIFont.mtsSansRegular(size: 14), .foregroundColor: UIColor.mtsBattleshipGrey])
+                                                  attributes: [.font: FontFamily.MTSSans.regular.font(size: 14), .foregroundColor: UIColor.mtsBattleshipGrey])
         
         let appendingLenght = hasImage ? 1 : 0
         
@@ -160,13 +160,13 @@ extension NSAttributedString {
             let growthProcProfit = NSAttributedString(string: " (\(sign)\(percentStringValue)%) ")
             fullString.append(growthAbsProfit)
             fullString.append(growthProcProfit)
-            fullString.addAttributes([.font: UIFont.mtsSansRegular(size: 14),
+            fullString.addAttributes([.font: FontFamily.MTSSans.regular.font(size: 14),
                                       .foregroundColor: color],
                                      range: NSMakeRange(0, appendingLenght + growthAbsProfit.length + growthProcProfit.length))
         } else {
             let growthAbsProfit = NSAttributedString(string: "\(stringValue) ")
             fullString.append(growthAbsProfit)
-            fullString.addAttributes([.font: UIFont.mtsSansRegular(size: 14),
+            fullString.addAttributes([.font: FontFamily.MTSSans.regular.font(size: 14),
                                       .foregroundColor: color],
                                      range: NSMakeRange(0, appendingLenght + growthAbsProfit.length))
         }
@@ -181,7 +181,7 @@ extension NSAttributedString {
                       mantissaRound: Int? = nil,
                       format1Or2Digits: Bool = false,
                       isPif: Bool = false,
-                      font: UIFont = .mtsSansRegular(size: 14),
+                      font: UIFont = FontFamily.MTSSans.regular.font(size: 14),
                       positiveColor: UIColor = .mtsAlgaeGreen,
                       negativeColor: UIColor = .mtsRed,
                       neutralColor: UIColor = .mtsDeepBlue,
@@ -222,10 +222,10 @@ extension NSAttributedString {
         var image: UIImage?
         if value > 0 {
             color = positiveColor
-            image = R.image.icArrowUp()
+            image = Assets.Images.icArrowUp.image
         } else if value < 0 {
             color = negativeColor
-            image = R.image.icArrowDown()
+            image = Assets.Images.icArrowDown.image
         }
         
         if #available(iOS 13.0, *) {} else {
@@ -270,7 +270,7 @@ extension NSAttributedString {
         let valueString = String(describing: value)
         
         let color: UIColor = value >= 0 ? .mtsDarkMint : .mtsRed
-        let font: UIFont = .mtsSansRegular(size: size)
+        let font: UIFont = FontFamily.MTSSans.regular.font(size: size)
         
         return NSAttributedString(string: valueString, attributes: [.foregroundColor: color, .font: font])
     }

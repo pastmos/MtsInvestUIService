@@ -126,19 +126,19 @@ enum TypeEnum: String, CaseIterable {
     var stringRepresentation: String {
         switch self {
         case .allTime:
-            return R.string.localizable.brokerageAllTimeProfitPrefix()
+            return Strings.Brokerage.allTimeProfitPrefix
         case .the1Month:
-            return R.string.localizable.brokerageMonthProfitPrefix()
+            return Strings.Brokerage.monthProfitPrefix
         case .the3Month:
-            return R.string.localizable.brokerageThreeMonthProfitPrefix()
+            return Strings.Brokerage.threeMonthProfitPrefix
 		case .the6Month:
-			return R.string.localizable.brokerageSixMonthProfitPrefix()
+			return Strings.Brokerage.sixMonthProfitPrefix
 		case .the1Year:
-			return R.string.localizable.brokerageYearProfitPrefix()
+			return Strings.Brokerage.yearProfitPrefix
         case .the3Year:
-            return R.string.localizable.brokerageThreeYearProfitPrefix()
+            return Strings.Brokerage.threeYearProfitPrefix
         case .the5Year:
-            return R.string.localizable.brokerageFiveYearProfitPrefix()
+            return Strings.Brokerage.fiveYearProfitPrefix
         }
     }
 }

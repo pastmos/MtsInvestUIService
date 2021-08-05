@@ -115,7 +115,7 @@ final class FeedShareCell: UITableViewCell, ConfigurableCell, SkeletonSupportabl
                                                                       currency: data.currency,
                                                                       integerColor: .mtsDeepBlue,
                                                                       fractionalColor: .mtsDeepBlue40,
-                                                                      integerFont: .mtsSansRegular(size: 16),
+                                                                      integerFont: FontFamily.MTSSans.regular.font(size: 16),
                                                                       minimumKeepingFractionDigits: 2,
                                                                       appendPlusSign: false)
 

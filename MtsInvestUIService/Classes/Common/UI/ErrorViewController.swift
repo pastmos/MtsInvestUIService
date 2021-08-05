@@ -12,17 +12,18 @@ class ErrorViewController: BaseViewController {
 
     @IBOutlet weak var titleLabel: UILabel!{
         didSet {
-            titleLabel.font = .mtsSansBold(size: 20)
-            titleLabel.text = R.string.localizable.errorScreenTitle()
+            titleLabel.font = FontFamily.MTSSans.bold.font(size: 20)
+
+            titleLabel.text = Strings.Error.Screen.title
         }
     }
     
     @IBOutlet weak var messageTextView: UITextView! {
         didSet {
-            messageTextView.font = .mtsSansRegular(size: 17)
+            messageTextView.font = FontFamily.MTSSans.regular.font(size: 17)
             messageTextView.textColor = .mtsBattleshipGrey
-            messageTextView.setAttributedTextWith(text: R.string.localizable.errorScreenMessageUsFull(),
-                                                  linkText: R.string.localizable.errorScreenMessageUs(),
+            messageTextView.setAttributedTextWith(text: Strings.Error.Screen.messageUsFull,
+                                                  linkText: Strings.Error.Screen.messageUs,
                                                   linkURLString: "")
             messageTextView.delegate = self
         }
@@ -30,7 +31,7 @@ class ErrorViewController: BaseViewController {
     
     @IBOutlet weak var closeButton: UIButton!{
         didSet {
-            closeButton.titleLabel?.font = .mtsSansMedium(size: 17)
+            closeButton.titleLabel?.font = FontFamily.MTSSans.medium.font(size: 17)
         }
     }
 
@@ -47,13 +48,7 @@ extension ErrorViewController: UITextViewDelegate {
                   in characterRange: NSRange,
                   interaction: UITextItemInteraction) -> Bool
     {
-        self.dismiss(animated: true) {
-            guard let presentingVC = UIApplication.shared.keyWindow?.visibleViewController else { return  }
-            let viewController: ModuleFactory<FeedbackFormViewController> = ApplicationAssembly.resolveController(FeedbackFormViewController.self)!
-            viewController.defaultProduce(from: presentingVC) { _, _ in }
-            
-        }
-        
+        self.dismiss(animated: true)
         return false
     }
 }

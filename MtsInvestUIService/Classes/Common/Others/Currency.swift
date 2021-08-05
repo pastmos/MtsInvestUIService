@@ -72,11 +72,11 @@ enum Currency: String {
         switch self {
         case .rub,
              .rur:
-            return R.string.localizable.currencyRUBSign()
+            return Strings.Currency.Rub.sign
         case .usd:
-            return R.string.localizable.currencyUSDSign()
+            return Strings.Currency.Usd.sign
         case .eur:
-            return R.string.localizable.currencyEURSign()
+            return Strings.Currency.Eur.sign
         default:
             return ""
         }
@@ -87,13 +87,13 @@ enum Currency: String {
         case .multi:
             return ""
         case .rub:
-            return R.string.localizable.currencyRUBName()
+            return Strings.Currency.Rub.name
         case .rur:
-            return R.string.localizable.currencyRURName()
+            return Strings.Currency.Rur.name
         case .usd:
-            return R.string.localizable.currencyUSDName()
+            return Strings.Currency.Usd.name
         case .eur:
-            return R.string.localizable.currencyEURName()
+            return Strings.Currency.Eur.name
         }
     }
     
@@ -103,22 +103,22 @@ enum Currency: String {
             return nil
         case .rub,
              .rur:
-            return R.image.icRub_grey()
+            return Assets.Images.icRubGrey.image
         case .usd:
-            return R.image.icUsd_grey()
+            return Assets.Images.icUsdGrey.image
         case .eur:
-            return R.image.icEur_grey()
+            return Assets.Images.icEurGrey.image
         }
     }
 	
 	var countryImage: UIImage? {
 		switch self {
 		case .eur:
-			return R.image.icEuFlag()
+			return Assets.Images.icEuFlag.image
 		case .rub:
-			return R.image.icRfFlag()
+			return Assets.Images.icRfFlag.image
 		case .usd:
-			return R.image.icUsFlag()
+			return Assets.Images.icUsFlag.image
 		default: return nil
 		}
 	}
@@ -128,13 +128,13 @@ enum Currency: String {
         case .multi:
             return ""
         case .rub:
-            return R.string.localizable.currencyRUBNameCount()
+            return Strings.Currency.Rub.nameCount
         case .rur:
-            return R.string.localizable.currencyRURNameCount()
+            return Strings.Currency.Rur.nameCount
         case .usd:
-            return R.string.localizable.currencyUSDNameCount()
+            return Strings.Currency.Usd.nameCount
         case .eur:
-            return R.string.localizable.currencyEURNameCount()
+            return Strings.Currency.Eur.nameCount
         }
     }
     
@@ -143,13 +143,13 @@ enum Currency: String {
         case .multi:
             return ""
         case .rub:
-            return R.string.localizable.currencyRUBFullName()
+            return Strings.Currency.Rub.fullName
         case .rur:
-            return R.string.localizable.currencyRURFullName()
+            return Strings.Currency.Rur.fullName
         case .usd:
-            return R.string.localizable.currencyUSDFullName()
+            return Strings.Currency.Usd.fullName
         case .eur:
-            return R.string.localizable.currencyEURFullName()
+            return Strings.Currency.Eur.fullName
         }
     }
 	

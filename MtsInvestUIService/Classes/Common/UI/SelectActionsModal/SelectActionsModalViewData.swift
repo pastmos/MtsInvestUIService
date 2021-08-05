@@ -18,9 +18,9 @@ struct SelectActionModalViewData {
     
     init(title: String,
          description: String,
-         image: UIImage? = R.image.attentionCircleOrangeIcon(),
-         actionButtonTitle: String = R.string.localizable.bondPlacementSelectActionModalDefaultActionButtonTitle(),
-         closeButtonTitle: String = R.string.localizable.bondPlacementSelectActionModalDefaultCloseButtonTitle(),
+         image: UIImage? = Assets.Images.attentionCircleOrangeIcon.image,
+         actionButtonTitle: String = Strings.BondPlacement.selectActionModalDefaultActionButtonTitle,
+         closeButtonTitle: String = Strings.BondPlacement.selectActionModalDefaultCloseButtonTitle,
          customActionButtonTitle: String = "") {
         self.title = title
         self.description = description

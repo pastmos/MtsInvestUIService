@@ -30,7 +30,7 @@ final class SelectActionView: UIView, SelectActionModalProtocol {
     
     @IBOutlet private weak var actionButton: UIButton! {
         didSet {
-            actionButton.backgroundColor = R.color.controlsPrimaryActive()
+            actionButton.backgroundColor = Assets.Colors.controlsPrimaryActive.color
         }
     }
     @IBOutlet private weak var customActionButton: UIButton!
